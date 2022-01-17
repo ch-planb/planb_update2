@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\MenuController;
 use App\Http\Controllers\Backend\ProjectController;
+use App\Http\Controllers\Backend\SliderController;
 
 use App\Http\Controllers\Backend\AdminProfileController;
 use App\Http\Controllers\ContactController;
@@ -55,12 +56,16 @@ Route::post('/contact/delete/{id}', [ContactController::class, 'ContactDelete'])
 
 Route::get('/menu/add', [MenuController::class, 'addMenu'])->name('admin.menu.add');
 Route::post('/menu/submit', [MenuController::class, 'submitMenu'])->name('admin.menu.submit');
-Route::get('/menu/edit/{id}', [MenuController::class, 'editMenuPage'])->name('admin.menu.edit');
 Route::post('/menu/update/{id}', [MenuController::class, 'updateMenuPage'])->name('admin.menu.update');
+Route::get('/menu/edit/{id}', [MenuController::class, 'editMenuPage'])->name('admin.menu.edit');
 Route::get('/menu/delete/{id}', [MenuController::class, 'deleteMenuPage'])->name('admin.menu.delete');
 //=========================== sub menu starts=========================//
 Route::get('/submenu/add', [MenuController::class, 'addSubMenu'])->name('admin.submenu.add');
 Route::post('/submenu/submit', [MenuController::class, 'submitSubMenu'])->name('admin.submenu.submit');
+Route::get('/submenu/edit/{id}', [MenuController::class, 'editSubMenuPage'])->name('admin.submenu.edit');
+
+Route::post('/submenu/update/{id}', [MenuController::class, 'updateSubMenuPage'])->name('admin.submenu.update');
+
 
 
 
@@ -70,3 +75,12 @@ Route::get('/project/create', [ProjectController::class, 'Create'])->name('proje
 Route::post('/project/store', [ProjectController::class, 'ProjectStore']);
 // Route::get('/contacts/list', [ContactController::class, 'ContactsList'])->name('contacts.list');
 // Route::post('/contact/delete/{id}', [ContactController::class, 'ContactDelete']);
+
+
+
+Route::prefix('slider')->group(function(){
+    Route::get('/view', [SliderController::class, 'SliderView'])->name('slider.view');
+    Route::post('/store', [SliderController::class, 'SliderStore'])->name('slider.store');
+
+
+});

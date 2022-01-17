@@ -16,6 +16,7 @@ class MenuController extends Controller
 
     //------------ menu and sub menu crud starts---------------//
     public function editMenuPage($id){
+        
         $menu=Menu::find($id);
         return view('admin.pages.menu.edit-menu',compact('menu'));  
     }
@@ -50,17 +51,39 @@ class MenuController extends Controller
     }
 
     public function  addSubMenu(){
+        $menus=Menu::all();
         $allSubMenu=Submenu::all();
-        return view('admin.pages.menu.add-submenu',compact('allSubMenu'));
+        return view('admin.pages.menu.add-submenu',compact('allSubMenu','menus'));
     }
 
     public function submitSubMenu(SubMenuFormRequest $request){
+      
         $submitMenu = Submenu::create([
-            'sub_menu' => $request->name,
-            'sub_menu_ulr' => $request->url,
-            'sub_menu_slug' => $request->slug,
+            'menu_id'=>$request->sub_menu_id,
+            'sub_menu' => $request->sub_menu,
+            'sub_menu_ulr' => $request->sub_menu_ulr,
+            'sub_menu_slug' => $request->sub_menu_slug,
         ]);
         return back()->with("success", "congo!the menu has been added");
+    }
+
+     //------------ menu and sub menu crud starts---------------//
+     public function editSubMenuPage($id){
+        $menus=Menu::all();
+        $submenu=Submenu::find($id);
+        return view('admin.pages.menu.edit-submenu',compact('submenu','menus'));  
+    }
+    
+    public function updateSubMenuPage(SubMenuFormRequest $request, $id){
+        dd($request); 
+       
+     Submenu::find($id)->update([
+        'menu_id'=>$request->sub_menu_id,
+        'sub_menu' => $request->sub_menu,
+        'sub_menu_ulr' => $request->sub_menu_ulr,
+        'sub_menu_slug' => $request->sub_menu_slug,
+        ]);
+        return back()->with("success", "congo!the menu has been updated");
     }
 
     //------------ menu and sub menu crud ends---------------//

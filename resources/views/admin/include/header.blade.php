@@ -5,6 +5,7 @@
 <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
 <meta name="author" content="PIXINVENT">
 <title>Dashboard</title>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 <link rel="apple-touch-icon" href="{{ asset('admin_assets/app-assets/images/ico/apple-icon-120.png')}}">
 <link rel="shortcut icon" type="image/x-icon" href="{{ asset('admin_assets/app-assets/images/ico/favicon.ico')}}">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
@@ -70,3 +71,11 @@
 
 {{--------summer note css-------------------}}
 <link rel="stylesheet" type="text/css" href="{{ asset('admin_assets/summernote/summernote.min.css')}}">
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  
+
+
+

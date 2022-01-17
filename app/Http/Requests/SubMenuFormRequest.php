@@ -35,7 +35,7 @@ class SubMenuFormRequest extends FormRequest
     public function messages()
     {
         return [
-            'sub_menu.required' => 'We need the name',
+            'sub_menu.required' => 'We need the fddzf name',
             'sub_menu_ulr.required' => 'We need url also',
             'sub_menu_slug.required'  => 'slugs are a good practice',
         ];
