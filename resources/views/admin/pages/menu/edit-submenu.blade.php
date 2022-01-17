@@ -10,13 +10,13 @@
                     <h4 class="card-title">Multiple Column</h4>
                 </div>
                 <div class="card-body">
-                    <form class="form" method="POST" action="{{route('admin.submenu.update',$submenu->id) }}">
+                    <form class="form" method="POST" action="{{route('admin.submenu.update',$submenu->id)}}">
                         @csrf
                         <div class="row">
                             <div class="col-md-5 col-5  mt-2">
                                
                                    
-                                <select class="js-example-basic-single" name="sub_menu_id">
+                                <select class="js-example-basic-single" name="menu_id">
                                     @foreach ($menus as $menu)
                                         
                                     
@@ -32,7 +32,7 @@
                                     <div class="form-group">
                                         <label for="first-name-column">Menu Name</label>
                                         <input type="text" id="first-name-column" class="form-control"
-                                            placeholder="First Name" name="name" value="{{$submenu->sub_menu}}">
+                                            placeholder="First Name" name="sub_menu" value="{{$submenu->sub_menu}}">
                                         <small class="text-danger">{{ $errors->first('sub_menu') }}</small>
                                     </div>
                                 </div>
@@ -43,7 +43,7 @@
                                 <div class="form-group">
                                     <label for="last-name-column">Slug Name</label>
                                     <input type="text" id="last-name-column" class="form-control"
-                                        placeholder="Last Name" name="slug" value="{{$submenu->sub_menu_slug}}">
+                                        placeholder="Last Name" name="sub_menu_slug" value="{{$submenu->sub_menu_slug}}">
                                     <small class="text-danger"> {{ $errors->first('sub_menu_slug') }} </small>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@
                                 <div class="form-group">
                                     <label for="city-column">Url link</label>
                                     <input type="text" id="city-column" class="form-control" placeholder="City"
-                                        name="url"  value="{{$submenu->sub_menu_ulr}}">
+                                        name="sub_menu_ulr"  value="{{$submenu->sub_menu_ulr}}">
 
                                     <small class="text-danger"> {{ $errors->first('sub_menu_ulr') }} </small>
                                 </div>

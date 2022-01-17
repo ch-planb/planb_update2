@@ -65,7 +65,7 @@ Route::get('/submenu/add', [MenuController::class, 'addSubMenu'])->name('admin.s
 Route::post('/submenu/submit', [MenuController::class, 'submitSubMenu'])->name('admin.submenu.submit');
 Route::get('/submenu/edit/{id}', [MenuController::class, 'editSubMenuPage'])->name('admin.submenu.edit');
 
-Route::post('/submenu/update/{id}', [MenuController::class, 'updateSubMenuPage'])->name('admin.submenu.update');
+Route::post('/submenu/update/{id}', [MenuController::class, 'updateSubMenu'])->name('admin.submenu.update');
 
 
 

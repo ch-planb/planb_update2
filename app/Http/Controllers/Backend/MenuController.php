@@ -74,16 +74,16 @@ class MenuController extends Controller
         return view('admin.pages.menu.edit-submenu',compact('submenu','menus'));  
     }
     
-    public function updateSubMenuPage(SubMenuFormRequest $request, $id){
-        dd($request); 
+    public function updateSubMenu(SubMenuFormRequest $request, $id){
+   
        
      Submenu::find($id)->update([
-        'menu_id'=>$request->sub_menu_id,
+        'menu_id'=>$request->menu_id,
         'sub_menu' => $request->sub_menu,
         'sub_menu_ulr' => $request->sub_menu_ulr,
         'sub_menu_slug' => $request->sub_menu_slug,
         ]);
-        return back()->with("success", "congo!the menu has been updated");
+        return back()->with("success", "congo!the sub menu has been updated");
     }
 
     //------------ menu and sub menu crud ends---------------//
