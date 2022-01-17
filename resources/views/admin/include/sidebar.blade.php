@@ -43,7 +43,66 @@
             </ul>
         </li>
 
+{{-- what we do sidebar menu start  --}}
+<li class="nav-item">
+    <a href="#" class="d-flex align-items-center" target="_self">
+        <i data-feather="file-text"></i>
+        <span class="menu-title text-truncate">What We Do</span>
+    </a>
+    <ul class="menu-content">
+     
+        
+        <li>
+            <a href="{{route('whatWeDo.create')}}" class="d-flex align-items-center" target="_self">
+                <i data-feather="circle"></i>
+                <span class="menu-item text-truncate">Add Content</span>
+            </a>
+        </li>
+    </ul>
 
+    <ul class="menu-content">
+     
+        
+        <li>
+            <a href="{{route('whatWeDo.index')}}" class="d-flex align-items-center" target="_self">
+                <i data-feather="circle"></i>
+                <span class="menu-item text-truncate">Show Content</span>
+            </a>
+        </li>
+    </ul>
+</li>
+
+{{-- what we do sidebar menu end  --}}
+{{-- add service sidebar menu start  --}}
+<li class="nav-item">
+    <a href="#" class="d-flex align-items-center" target="_self">
+        <i data-feather="file-text"></i>
+        <span class="menu-title text-truncate">Services</span>
+    </a>
+    <ul class="menu-content">
+     
+        
+        <li>
+            <a href="{{route('service.add')}}" class="d-flex align-items-center" target="_self">
+                <i data-feather="circle"></i>
+                <span class="menu-item text-truncate">Add Service</span>
+            </a>
+        </li>
+    </ul>
+
+    <ul class="menu-content">
+     
+        
+        <li>
+            <a href="{{route('service.index')}}" class="d-flex align-items-center" target="_self">
+                <i data-feather="circle"></i>
+                <span class="menu-item text-truncate">Show Service</span>
+            </a>
+        </li>
+    </ul>
+</li>
+
+{{-- service sidebar menu end  --}}
 
         <li class="nav-item  ">
             <a href="javascript:void(0)" class="d-flex align-items-center" target="_self">
