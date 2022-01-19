@@ -9,16 +9,29 @@
             <div class="card">
                 <div class="card-header">
                     <h4 class="card-title">Project Create Form</h4>
+                    <a href="{{route('project.manage')}}" type="button" class="btn btn-primary">Manage Projects</a>
                 </div>
                 <div class="card-body">
                     <form class="form" id="projectForm" enctype="multipart/form-data">
                         @csrf
                         <div class="row">
+                            <div class="col-md-12 col-12">
+                                <div class="form-group">
+                                    <label for="title">Porject Category</label>
+                                    <select class="select2 form-control" name="pro_cat_id">
+                                        <option value="" selected disabled>Select One</option>
+                                        @foreach ($project_categories as $categories)
+                                            <option value="{{$categories->id}}">{{$categories->name}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
                             <div class="col-md-6 col-12">
                                 <div class="form-group">
                                     <label for="title">Title</label>
                                     <input type="text" id="title" class="form-control" placeholder="Project Title" name="title" value="{{ old('title')}}"/>
 
+                                    {{-- Client ID --}}
                                     <input type="hidden" id="client_id" name="client_id" value="121"/>
                                 </div>
                             </div>
@@ -86,6 +99,13 @@
 
 @section('scripts')
 
+<script src="{{asset('admin_assets/app-assets/vendors/js/pickers/pickadate/picker.js')}}"></script>
+<script src="{{asset('admin_assets/app-assets/vendors/js/pickers/pickadate/picker.date.js')}}"></script>
+<script src="{{asset('admin_assets/app-assets/vendors/js/pickers/pickadate/picker.time.js')}}"></script>
+<script src="{{asset('admin_assets/app-assets/vendors/js/pickers/pickadate/legacy.js')}}"></script>
+<script src="{{asset('admin_assets/app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js')}}"></script>
+<script src="{{asset('admin_assets/app-assets/js/scripts/forms/pickers/form-pickers.js')}}"></script>
+
     <script>
         $(document).ready(function() {
             $('#details').summernote({
@@ -112,8 +132,8 @@
                     .then(response => {
                         console.log(data);
                         Swal.fire(
-                            'Deleted!',
-                            'Your file has been deleted.',
+                            'Created!',
+                            'Your file has been created.',
                             'success'
                         )
 

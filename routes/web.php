@@ -4,12 +4,13 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\MenuController;
 use App\Http\Controllers\Backend\ProjectController;
+use App\Http\Controllers\Backend\ProjectCategoryController;
 use App\Http\Controllers\Backend\SliderController;
 
 use App\Http\Controllers\Backend\AdminProfileController;
 use App\Http\Controllers\Backend\ServiceController;
 use App\Http\Controllers\Backend\WhatWeDoController;
-use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Backend\ContactController;
 use Laravel\Jetstream\Rules\Role;
 
 Route::get('/', function () {
@@ -53,6 +54,20 @@ Route::get('/show/contacts/data', [ContactController::class, 'getData']);
 Route::get('/contacts/list', [ContactController::class, 'ContactsList'])->name('contacts.list');
 Route::post('/contact/delete/{id}', [ContactController::class, 'ContactDelete']);
 
+// For Project Category Route
+Route::get('/project/category/create', [ProjectCategoryController::class, 'Create'])->name('project.category.create');
+Route::post('/project/category/store', [ProjectCategoryController::class, 'store']);
+Route::get('/show/projects/categories', [ProjectCategoryController::class, 'getProjectCategoriesData']);
+Route::get('/project/category/manage', [ProjectCategoryController::class, 'manage'])->name('project.category.manage');
+Route::post('/project/category/delete/{id}', [ProjectCategoryController::class, 'delete']);
+
+// For Projects Route
+Route::get('/project/create', [ProjectController::class, 'Create'])->name('project.create');
+Route::post('/project/store', [ProjectController::class, 'ProjectStore']);
+Route::get('/project/manage', [ProjectController::class, 'manage'])->name('project.manage');
+Route::get('/show/projects', [ProjectController::class, 'getProjectsData']);
+Route::post('/project/delete/{id}', [ProjectController::class, 'delete']);
+
 
 
 Route::get('/menu/add', [MenuController::class, 'addMenu'])->name('admin.menu.add');
@@ -68,14 +83,6 @@ Route::get('/submenu/edit/{id}', [MenuController::class, 'editSubMenuPage'])->na
 Route::post('/submenu/update/{id}', [MenuController::class, 'updateSubMenu'])->name('admin.submenu.update');
 
 
-
-
-
-// For Projects Route
-Route::get('/project/create', [ProjectController::class, 'Create'])->name('project.create');
-Route::post('/project/store', [ProjectController::class, 'ProjectStore']);
-// Route::get('/contacts/list', [ContactController::class, 'ContactsList'])->name('contacts.list');
-// Route::post('/contact/delete/{id}', [ContactController::class, 'ContactDelete']);
 
 
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Backend;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
@@ -47,8 +47,6 @@ class ContactController extends Controller
         $contact = Contact::find($id);
 
         $contact->delete();
-        
-
         return redirect()->back();
     }
 }
