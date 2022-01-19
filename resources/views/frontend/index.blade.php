@@ -3,404 +3,233 @@
 
 
 <!--=====================================-->
-        <!--=            Financo Start          =-->
-        <!--=====================================-->
-    <section class="financo-activities-wrap1">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-lg-4 col-md-6">
-                    <div class="financo-activities-box1">
-                        <div class="item-img-round">
-                            <img src="{{asset('assets/img/figure/figure39.png')}}" alt="figure" height="81" width="81">
-                            <div class="item-img">
-                                <img src="{{asset('assets/img/figure/figure41.png')}}" alt="figure" height="45" width="47">
-                            </div>
+<!--=            Slider Start           =-->
+<!--=====================================-->
+<div class="slider-area2 slider-layout2">
+    <div class="slider-bg-img1" data-sal="zoom-in" data-sal-duration="1500" data-sal-delay="300">
+        <img src="{{ asset('assets/img/figure/figure98.png')}}" alt="figure" width="772" height="366"> 
+    </div>
+    <div class="slider-bg-img2">
+        <img src="{{ asset('assets/img/figure/figure99.png')}}" alt="figure" data-sal="slide-up" data-sal-duration="1300" data-sal-delay="700" width="211" height="96"> 
+    </div>
+    <div class="bend niceties preview-1">
+        <div id="ensign-nivoslider-2" class="slides">
+            <img src="{{ asset('assets/img/slider/slider3.png')}}" alt="slider" width="1920" height="720" title="#slider-direction-1" />
+            <img src="{{ asset('assets/img/slider/slider2.png')}}" alt="slider" width="1920" height="720" title="#slider-direction-2" />
+            <img src="{{ asset('assets/img/slider/slider1.png')}}" alt="slider" width="1920" height="720" title="#slider-direction-3" />
+        </div>
+        <div id="slider-direction-1" class="t-cn slider-direction">
+            <div class="slider-content s-tb slide-1">
+                <div class="text-left title-container s-tb-c">
+                    <div class="container">
+                        <p class="item-subtitle">Find The Right Way</p>
+                        <h2 class="item-title">Business Solutions For All Enterprises</h2>
+                        <div class="item-paragraph">Bhen an unknown printer took a galley of type and scrambled ype specimen book. It has survived .</div>
+                        <div class="slider-button">
+                            <a href="service1.html" class="slider-btn">Free Consulting<i class="fas fa-long-arrow-alt-right"></i></a>
                         </div>
-                        <h2 class="heading-title"><a href="service1.html">Business Consulting</a></h2>
-                        <p>Business whenknown printer aretook  galley of type and scrambled make type specimen book.</p>
-                        <div class="item-button">
-                            <a href="single-service1.html" class="item-btn">+ <span>Read More</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="financo-activities-box1">
-                        <div class="item-img-round">
-                            <img src="{{asset('assets/img/figure/figure39.png') }}" alt="figure" height="81" width="81">
-                            <div class="item-img">
-                                <img src="{{asset('assets/img/figure/figure42.png') }}" alt="figure" height="41" width="45">
-                            </div>
-                        </div>
-                        <h2 class="heading-title"><a href="service1.html">Financial Planning</a></h2>
-                        <p>Business whenknown printer aretook  galley of type and scrambled make type specimen book.</p>
-                        <div class="item-button">
-                            <a href="single-service2.html" class="item-btn">+ <span>Read More</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="financo-activities-box1 financo-activities-box3">
-                        <div class="item-img-round">
-                            <img src="{{asset('assets/img/figure/figure39.png') }}" alt="figure" height="81" width="81">
-                            <div class="item-img">
-                                <img src="{{asset('assets/img/figure/figure43.png') }}" alt="figure" height="45" width="49">
-                            </div>
-                        </div>
-                        <h2 class="heading-title"><a href="service1.html">Investment Security</a></h2>
-                        <p>Business whenknown printer aretook  galley of type and scrambled make type specimen book.</p>
-                        <div class="item-button">
-                            <a href="single-service1.html" class="item-btn">+ <span>Read More</span></a>
+                        <div class="social-site">
+                            <ul>
+                                <li><span>Follow Us On :</span><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--=====================================-->
-    <!--=            About-finnaco Start    =-->
-    <!--=====================================-->
-    <section class="about-finnaco-wrap1">
-        <div class="background-shape6">
-            <img src="{{asset('assets/img/figure/figure32.png') }}" alt="figure"  width="404" height="216">
-        </div>
-        <div class="background-shape7">
-            <img src="{{asset('assets/img/figure/figure29.png') }}" alt="figure" width="747" height="256">
-        </div>
-        <div class="background-shape8">
-            <img src="{{asset('assets/img/figure/figure33.png') }}" alt="figure" width="783" height="439">
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-12">
-                    <div class="about-box1">
-                        <p class="section-subtitle">About Finbuzz</p>
-                        <h2 class="section-title">Doing The Right Thing At The Right Time</h2>
-                        <p>Bookan unknown printer took a galley of type and scrambled make It has survived not only five centuries.Lorem adipiscg incididuntlabore dolor ipsum dolor sit amet, consectetur.</p>
-                        <div class="media">
-                            <div class="item-img">
-                                <img src="{{asset('assets/img/figure/figure30.png') }}" alt="figure" width="47" height="71">  
-                            </div>
-                            <div class="media-body">
-                                <h3 class="heading-title"><a href="#">Financing Business</a></h3>
-                                <p>Bookan unknown printer took a galley type and scrambled.</p>
-                            </div>
+        <div id="slider-direction-2" class="t-cn slider-direction">
+            <div class="slider-content s-tb slide-2">
+                <div class="text-left title-container s-tb-c">
+                    <div class="container">
+                        <p class="item-subtitle">Find The Right Way</p>
+                        <h2 class="item-title">Business Solutions For All Enterprises</h2>
+                        <div class="item-paragraph">Bhen an unknown printer took a galley of type and scrambled ype specimen book. It has survived .</div>
+                        <div class="slider-button">
+                            <a href="service1.html" class="slider-btn">Free Consulting<i class="fas fa-long-arrow-alt-right"></i></a>
                         </div>
-                        <div class="media">
-                            <div class="item-img">
-                                <img src="{{asset('assets/img/figure/figure31.png') }}" alt="figure" width="51" height="66">  
-                            </div>
-                            <div class="media-body">
-                                <h3 class="heading-title"><a href="#">Yearly Calculation</a></h3>
-                                <p>Bookan unknown printer took a galley type and scrambled.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-12">
-                    <div class="about-box2">
-                        <div class="about-img">
-                            <img src="{{asset('assets/img/about/about1.png') }}" alt="figure" width="465" height="596">
+                        <div class="social-site">
+                            <ul>
+                                <li><span>Follow Us On :</span><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--=====================================-->
-    <!--=            Brand Start            =-->
-    <!--=====================================-->
-    <section class="brand-wrap-layout1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-md-4 col-6">
-                    <div class="brand-box1">
-                        <div class="brand-img">
-                            <a href="#"><img src="{{asset('assets/img/figure/figure22.png') }}" alt="figure" width="112" height="97"></a>
+        <div id="slider-direction-3" class="t-cn slider-direction">
+            <div class="slider-content s-tb slide-3">
+                <div class="text-left title-container s-tb-c">
+                    <div class="container">
+                        <p class="item-subtitle">Find The Right Way</p>
+                        <h2 class="item-title">Business Solutions For All Enterprises</h2>
+                        <div class="item-paragraph">Bhen an unknown printer took a galley of type and scrambled ype specimen book. It has survived .</div>
+                        <div class="slider-button">
+                            <a href="service1.html" class="slider-btn">Free Consulting<i class="fas fa-long-arrow-alt-right"></i></a>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-6">
-                    <div class="brand-box1">
-                        <div class="brand-img">
-                            <a href="#"><img src="{{asset('assets/img/figure/figure23.png') }}" alt="figure" width="92" height="102"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-6">
-                    <div class="brand-box1">
-                        <div class="brand-img">
-                            <a href="#"><img src="{{asset('assets/img/figure/figure24.png') }}" alt="figure" width="109" height="86"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-6">
-                    <div class="brand-box1">
-                        <div class="brand-img">
-                            <a href="#"><img src="{{asset('assets/img/figure/figure25.png') }}" alt="figure" width="140" height="98"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-6">
-                    <div class="brand-box1">
-                        <div class="brand-img">
-                            <a href="#"><img src="{{asset('assets/img/figure/figure26.png') }}" alt="figure" width="96" height="98"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-6">
-                    <div class="brand-box1">
-                        <div class="brand-img">
-                            <a href="#"><img src="{{asset('assets/img/figure/figure27.png') }}" alt="figure" width="95" height="79"></a>
+                        <div class="social-site">
+                            <ul>
+                                <li><span>Follow Us On :</span><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--=====================================-->
-    <!--=            Consulting Start       =-->
-    <!--=====================================-->
-    <section class="consulting-service-wrap1">
-        <div class="container">
-            <p class="section-subtitle">What We Do</p>
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="consulting-service1">
-                        <h2 class="section-title">Our Business & Financial Consulting Services</h2>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="consulting-service2">
-                        <p>Bookan unknown printer took a galley of type and scrambled make It has survived not only five centuries.Lorem ipsum dolor sitam consectetur adipiscg sedo eiusmod tempor incididuntlabore dolor ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="consulting-service3" data-bg-image="{{asset('assets/img/service/service1.jpg')}}" width="555" height="299">
-                        <div class="media">
-                            <div class="item-img">
-                                <img src="{{asset('assets/img/figure/figure18.png')}}" alt="figure" width="87" height="95">
-                                <div class="service-img">
-                                    <img src="{{asset('assets/img/figure/figure46.png')}}" alt="service" width="86" height="94">
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                <h3 class="title-heading"><a href="service1.html">Market Research</a></h3>
-                                <p>Lorem ipsum dolor sitam consectetur adipiscg sedo eiusmod tempor incididuntlabore doloripsum dolor sit amet, consectetur.</p>
-                                <div class="item-button">
-                                    <a href="service1.html" class="item-btn">Read More<i class="fas fa-long-arrow-alt-right"></i></a>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="consulting-service3" data-bg-image="{{asset('assets/img/service/service1.jpg') }}"" width="555" height="299">
-                        <div class="media">
-                            <div class="item-img">
-                                <img src="{{asset('assets/img/figure/figure21.png') }}" alt="figure" width="76" height="93">
-                                <div class="service-img service-img2">
-                                    <img src="{{asset('assets/img/figure/figure47.png') }}" alt="service" width="76" height="93">
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                <h3 class="title-heading"><a href="service1.html">Investment Trading</a></h3>
-                                <p>Lorem ipsum dolor sitam consectetur adipiscg sedo eiusmod tempor incididuntlabore doloripsum dolor sit amet, consectetur.</p>
-                                <div class="item-button">
-                                    <a href="service1.html" class="item-btn">Read More<i class="fas fa-long-arrow-alt-right"></i></a>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="consulting-service3" data-bg-image="{{asset('assets/img/service/service1.jpg') }}"" width="555" height="299">
-                        <div class="media">
-                            <div class="item-img">
-                                <img src="{{asset('assets/img/figure/figure21.png') }}" alt="figure" width="76" height="93">
-                                <div class="service-img service-img3">
-                                    <img src="{{asset('assets/img/figure/figure47.png') }}" alt="service" width="76" height="93">
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                <h3 class="title-heading"><a href="service1.html">Financial Analysis</a></h3>
-                                <p>Lorem ipsum dolor sitam consectetur adipiscg sedo eiusmod tempor incididuntlabore doloripsum dolor sit amet, consectetur.</p>
-                                <div class="item-button">
-                                    <a href="service1.html" class="item-btn">Read More<i class="fas fa-long-arrow-alt-right"></i></a>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="consulting-service3" data-bg-image="{{asset('assets/img/service/service1.jpg') }}"" width="555" height="299">
-                        <div class="media">
-                            <div class="item-img">
-                                <img src="{{asset('assets/img/figure/figure20.png') }}" alt="figure" width="78" height="94">
-                                <div class="service-img service-img4">
-                                    <img src="{{asset('assets/img/figure/figure49.png') }}" alt="service" width="78" height="94">
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                <h3 class="title-heading"><a href="service1.html">Taxation Planning</a></h3>
-                                <p>Lorem ipsum dolor sitam consectetur adipiscg sedo eiusmod tempor incididuntlabore doloripsum dolor sit amet, consectetur.</p>
-                                <div class="item-button">
-                                    <a href="service1.html" class="item-btn">Read More<i class="fas fa-long-arrow-alt-right"></i></a>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </div>
+</div>
+
+<!--=====================================-->
+<!--=            Banner Start           =-->
+<!--=====================================-->
+<section class="banner-wrap2">
+    <div class="container">
+        <div class="background-image1">
+            <img src="{{asset('assets/img/figure/figure69.png')}}" alt="banner" width="183" height="137">
         </div>
-    </section>
-    <!--=====================================-->
-    <!--=            Progress-bar Start      =-->
-    <!--=====================================-->
-    <section class="progress-bar-wrap1">
-        <div class="container-fluid">
-            <div class="row no-gutters">
-                <div class="col-lg-6 col-md-12">
-                    <div class="progress-bar-box1 progress-bar-box3">
-                        <h2 class="section-title">Our Expertise & Skills to All Business</h2>
-                        <p> when an unknown printer took a galley of type and scrambled make a type specimen book.</p>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="progress-box"> 
-                                    <div class="circle-progress" data-value="0.95">
-                                        <span></span>
-                                        <label>Investment</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="progress-box">
-                                    <div class="circle-progress" data-value="0.95">
-                                        <span></span>
-                                        <label>Projects</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <div class="progress-bar-box2 progress-bar-box3">
-                        <div class="background-image5">
-                            <img src="{{asset('assets/img/figure/figure38.png') }}" alt="figure" width="475" height="553">
-                        </div>
-                        <div class="item-img">
-                            <img src="{{asset('assets/img/service/service2.jpg') }}"" alt="service" width="960" height="555">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--=====================================-->
-    <!--=            Team Start             =-->
-    <!--=====================================-->
-    <section class="team-wrap-layout1">
         <div class="background-image2">
-            <img src="{{asset('assets/img/figure/figure14.png') }}" alt="figure" width="490" height="945">
+            <img src="{{asset('assets/img/figure/figure70.png')}}" alt="banner" width="404" height="180">
         </div>
-        <div class="background-image3">
-            <img src="{{asset('assets/img/figure/figure15.png') }}" alt="figure" width="501" height="870">
-        </div>
-        <div class="container">
-            <div class="section-heading">
-                <p class="item-subtitle">Our Team Member</p>
-                <h2 class="heading-title">Our Expertise Will Help You</h2>
-                <p>Bookan unknown printer took a galley of type and scrambled make It has survived not only five centuries.</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-box1">
-                        <div class="item-shape"></div>
-                        <div class="item-img">
-                            <a href="#"><img src="{{asset('assets/img/team/team1.jpg') }}"" alt="team" width="510" height="500"></a>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="item-content">
-                            <h3 class="item-title"><a href="team1.html">Robert Gerry</a></h3>
-                            <h4 class="item-subtitle">Ceo & Founder</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-box1">
-                        <div class="item-shape"></div>
-                        <div class="item-img">
-                            <a href="#"><img src="{{asset('assets/img/team/team2.jpg') }}"" alt="team" width="510" height="500"></a>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="item-content">
-                            <h3 class="item-title"><a href="team1.html">Robert Gerry</a></h3>
-                            <h4 class="item-subtitle">Ceo & Founder</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-box1">
-                        <div class="item-shape"></div>
-                        <div class="item-img">
-                            <a href="#"><img src="{{asset('assets/img/team/team3.jpg') }}"" alt="team" width="510" height="500"></a>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="item-content">
-                            <h3 class="item-title"><a href="team1.html">Robert Gerry</a></h3>
-                            <h4 class="item-subtitle">Ceo & Founder</h4>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="banner-box2">
+                    <div class="media">
+                        <h2 class="section-title">Need Any Business Consulting Facilities? Contact With Us </h2>
+                        <div class="media-body">
+                            <div class="item-button">
+                                <a href="about.html" class="item-btn">Request a Call Back<i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--=====================================-->
-    <!--=            Banner Start           =-->
-    <!--=====================================-->
-    <section class="banner-wrap1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="banner-box1">
-                        <div class="item-img">
-                            <img src="{{asset('assets/img/blog/blog39.jpg') }}"" alt="blog" width="586" height="195">
+    </div>
+</section>
+
+<!--=====================================-->
+<!--=            Financo Start          =-->
+<!--=====================================-->
+<section class="financo-activities-wrap2">
+    <div class="background-shape69">
+        <img src="{{asset('assets/img/figure/figure68.png')}}" alt="figure" width="1920" height="267">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="financo-activities-box2">
+                    <div class="item-img">
+                        <a href="#"><img src="{{asset('assets/img/financo/financo1.jpg')}}" alt="financo" width="510" height="360"></a>
+                    </div>
+                    <div class="financo-box-layout1">
+                        <div class="financo-layout1">
+                            <div class="financo-img">
+                                <img src="{{asset('assets/img/figure/figure65.png')}}" alt="figure" width="44" height="46">
+                            </div>
+                            <h2 class="heading-title"><a href="service2.html">Business Consulting</a></h2>
+                            <p>Finance when unknown printer took a galley of type.</p>
                         </div>
-                        <div class="bannar-details">
-                            <h3 class="heading-title">Need Any Financial Help!</h3>
-                            <div class="contact-box2">
-                                <div class="item-icon-box">
-                                    <div class="item-icon"><i class="far fa-comments"></i></div>   
-                                    <div class="banner-content">
-                                        <div class="item-hotline">Hotline</div>
-                                        <div class="item-number">009850 9850</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="financo-activities-box2">
+                    <div class="item-img">
+                        <a href="#"><img src="{{asset('assets/img/financo/financo2.jpg')}}" alt="financo" width="510" height="360"></a>
+                    </div>
+                    <div class="financo-box-layout1">
+                        <div class="financo-layout1">
+                            <div class="financo-img">
+                                <img src="{{asset('assets/img/figure/figure66.png')}}" alt="figure" width="44" height="46">
+                            </div>
+                            <h2 class="heading-title"><a href="service2.html">Business Consulting</a></h2>
+                            <p>Finance when unknown printer took a galley of type.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 d-lg-block d-none">
+                <div class="financo-activities-box2">
+                    <div class="item-img">
+                        <a href="#"><img src="{{asset('assets/img/financo/financo3.jpg')}}" alt="financo" width="510" height="360"></a>
+                    </div>
+                    <div class="financo-box-layout1">
+                        <div class="financo-layout1">
+                            <div class="financo-img">
+                                <img src="{{asset('assets/img/figure/figure67.png')}}" alt="figure" width="32" height="49">
+                            </div>
+                            <h2 class="heading-title"><a href="service2.html">Business Consulting</a></h2>
+                            <p>Finance when unknown printer took a galley of type.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=====================================-->
+<!--=            About-finnaco Start    =-->
+<!--=====================================-->
+<section class="about-finnaco-wrap2">
+    <div class="container">
+        <div class="background-image">
+            <img src="{{asset('assets/img/figure/figure64.png')}}" alt="figure" width="174" height="173">
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="about-box3">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="item-img">
+                                <img src="{{asset('assets/img/service/service9.jpg')}}" alt="service" width="690" height="835">
+                                <div class="shape-box">
+                                    <div class="item-shape">
+                                        <div class="item-icon"><i class="fas fa-phone-alt"></i></div>
+                                        <ul class="item-estimate">
+                                            <li>Let's call us to get a free estimate</li>
+                                            <li><span>(+123) 456-7890</span></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="item-icon-box item-icon-box2">
-                                    <div class="item-icon"><i class="far fa-envelope"></i></div>   
-                                    <div class="banner-content">
-                                        <div class="item-hotline">Send Us Email</div>
-                                        <div class="item-number">info@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-box8">
+                                <h2 class="heading-title">Our Consulting For All Kind Of Finance Services</h2>
+                                <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining unchanged.</p>
+                                <div class="media">
+                                    <ul class="about-list">
+                                        <li><i class="fas fa-check"></i>Web And Mobile Application</li>
+                                        <li><i class="fas fa-check"></i>New Domain Registration</li>
+                                        <li><i class="fas fa-check"></i>Data Text Synchronization</li>
+                                        <li><i class="fas fa-check"></i>Web Development</li>
+                                    </ul>
+                                    <div class="media-body">
+                                        <div class="grubh-img">
+                                            <img src="{{asset('assets/img/figure/figure63.png')}}" alt="figure" width="136" height="137">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="item-paragraph">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries unchanged.</p>
+                                <div class="media">
+                                    <div class="about-img">
+                                        <img src="{{asset('assets/img/about/about2.png')}}" alt="about" width="110" height="110">
+                                    </div>
+                                    <div class="media-body2">
+                                        <h3 class="item-title">Michard Wizer</h3>
+                                        <h4 class="item-subtitle">CEO & Founder</h4>
                                     </div>
                                 </div>
                             </div>
@@ -409,367 +238,620 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!--=====================================-->
-    <!--=            Project Start          =-->
-    <!--=====================================-->
-    <section class="project-wrap-layout1">
-        <div class="container">
-            <p class="section-subtitle">Our Experiences</p>
+    </div>
+</section>
+
+<!--=====================================-->
+<!--=          Consulting Start         =-->
+<!--=====================================-->
+<section class="consulting-service-wrap2" style="background-image: url({{asset('assets/img/team/team4.jpg')}});">
+    <div class="container">
+        <div class="background-image1">
+            <img src="{{asset('assets/img/figure/figure57.png')}}" alt="png" width="164" height="461">
+        </div>
+        <div class="background-image2">
+            <img src="{{asset('assets/img/figure/figure58.png')}}" alt="png" width="257" height="752">
+        </div>
+        <p class="section-subtitle">What We Do</p>
+        <div class="row gutters-50">
+            <div class="col-lg-5">
+                <div class="consulting-top1">
+                    <h2 class="section-title">Our Business & Financial Consulting Services</h2>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="consulting-top2">
+                    <p>Bookan unknown printer took a galley of type and scrambled make It has survived not only five centuries.Lorem ipsum dolor sitam consectetur adipiscg sedo eiusmod tempor incididuntlabore dolor ipsum dolor sit amet, consectetur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="consulting-service4">
+                    <h3 class="heading-title">Target People</h3>
+                    <div class="item-img">
+                        <img src="{{asset('assets/img/figure/figure59.png')}}" alt="figure" width="87" height="65">
+                    </div>
+                    <p>when unknown printer tookar galleytype ande scrambled imake type.</p>
+                    <div class="consulting-button">
+                        <a href="service2.html" class="consulting-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="consulting-service4">
+                    <h3 class="heading-title">Tax Advisory</h3>
+                    <div class="item-img">
+                        <img src="{{asset('assets/img/figure/figure60.png')}}" alt="figure" width="49" height="63">
+                    </div>
+                    <p>when unknown printer tookar galleytype ande scrambled imake type.</p>
+                    <div class="consulting-button">
+                        <a href="service2.html" class="consulting-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="consulting-service4">
+                    <h3 class="heading-title">Investment</h3>
+                    <div class="item-img">
+                        <img src="{{asset('assets/img/figure/figure61.png')}}" alt="figure" width="45" height="64">
+                    </div>
+                    <p>when unknown printer tookar galleytype ande scrambled imake type.</p>
+                    <div class="consulting-button">
+                        <a href="service2.html" class="consulting-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="consulting-service4">
+                    <h3 class="heading-title">Saving Money</h3>
+                    <div class="item-img">
+                        <img src="{{asset('assets/img/figure/figure62.png')}}" alt="figure" width="42" height="64">
+                    </div>
+                    <p>when unknown printer tookar galleytype ande scrambled imake type.</p>
+                    <div class="consulting-button">
+                        <a href="service2.html" class="consulting-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="consulting-service4">
+                    <h3 class="heading-title">Target People</h3>
+                    <div class="item-img">
+                        <img src="{{asset('assets/img/figure/figure59.png')}}" alt="figure" width="87" height="65">
+                    </div>
+                    <p>when unknown printer tookar galleytype ande scrambled imake type.</p>
+                    <div class="consulting-button">
+                        <a href="service2.html" class="consulting-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="consulting-service4">
+                    <h3 class="heading-title">Tax Advisory</h3>
+                    <div class="item-img">
+                        <img src="{{asset('assets/img/figure/figure60.png')}}" alt="figure" width="49" height="63">
+                    </div>
+                    <p>when unknown printer tookar galleytype ande scrambled imake type.</p>
+                    <div class="consulting-button">
+                        <a href="service2.html" class="consulting-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="consulting-service4">
+                    <h3 class="heading-title">Investment</h3>
+                    <div class="item-img">
+                        <img src="{{asset('assets/img/figure/figure61.png')}}" alt="figure" width="45" height="64">
+                    </div>
+                    <p>when unknown printer tookar galleytype ande scrambled imake type.</p>
+                    <div class="consulting-button">
+                        <a href="service2.html" class="consulting-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="consulting-service4">
+                    <h3 class="heading-title">Saving Money</h3>
+                    <div class="item-img">
+                        <img src="{{asset('assets/img/figure/figure62.png')}}" alt="figure" width="42" height="64">
+                    </div>
+                    <p>when unknown printer tookar galleytype ande scrambled imake type.</p>
+                    <div class="consulting-button">
+                        <a href="service2.html" class="consulting-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=====================================-->
+<!--=            Team Start             =-->
+<!--=====================================-->
+<section class="team-wrap-layout1">
+    <div class="background-image2">
+        <img src="{{asset('assets/img/figure/figure14.png') }}" alt="figure" width="490" height="945">
+    </div>
+    <div class="background-image3">
+        <img src="{{asset('assets/img/figure/figure15.png') }}" alt="figure" width="501" height="870">
+    </div>
+    <div class="container">
+        <div class="section-heading">
+            <p class="item-subtitle">Our Team Member</p>
+            <h2 class="heading-title">Our Expertise Will Help You</h2>
+            <p>Bookan unknown printer took a galley of type and scrambled make It has survived not only five centuries.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="team-box1">
+                    <div class="item-shape"></div>
+                    <div class="item-img">
+                        <a href="#"><img src="{{asset('assets/img/team/team1.jpg') }}"" alt="team" width="510" height="500"></a>
+                        <ul class="team-social">
+                            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title"><a href="team1.html">Robert Gerry</a></h3>
+                        <h4 class="item-subtitle">Ceo & Founder</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="team-box1">
+                    <div class="item-shape"></div>
+                    <div class="item-img">
+                        <a href="#"><img src="{{asset('assets/img/team/team2.jpg') }}"" alt="team" width="510" height="500"></a>
+                        <ul class="team-social">
+                            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title"><a href="team1.html">Robert Gerry</a></h3>
+                        <h4 class="item-subtitle">Ceo & Founder</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="team-box1">
+                    <div class="item-shape"></div>
+                    <div class="item-img">
+                        <a href="#"><img src="{{asset('assets/img/team/team3.jpg') }}"" alt="team" width="510" height="500"></a>
+                        <ul class="team-social">
+                            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title"><a href="team1.html">Robert Gerry</a></h3>
+                        <h4 class="item-subtitle">Ceo & Founder</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=====================================-->
+<!--=            Banner Start           =-->
+<!--=====================================-->
+<section class="banner-wrap1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="banner-box1">
+                    <div class="item-img">
+                        <img src="{{asset('assets/img/blog/blog39.jpg') }}"" alt="blog" width="586" height="195">
+                    </div>
+                    <div class="bannar-details">
+                        <h3 class="heading-title">Need Any Financial Help!</h3>
+                        <div class="contact-box2">
+                            <div class="item-icon-box">
+                                <div class="item-icon"><i class="far fa-comments"></i></div>   
+                                <div class="banner-content">
+                                    <div class="item-hotline">Hotline</div>
+                                    <div class="item-number">009850 9850</div>
+                                </div>
+                            </div>
+                            <div class="item-icon-box item-icon-box2">
+                                <div class="item-icon"><i class="far fa-envelope"></i></div>   
+                                <div class="banner-content">
+                                    <div class="item-hotline">Send Us Email</div>
+                                    <div class="item-number">info@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=====================================-->
+<!--=            Project Start          =-->
+<!--=====================================-->
+<section class="project-wrap-layout1">
+    <div class="container">
+        <p class="section-subtitle">Our Experiences</p>
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="project-box1">
+                    <h2 class="section-title">We’ve Done Lot’s Of Awesome Projects</h2>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="project-box2">
+                    <p>Bookan unknown printer took a galley of type and scrambled make It has survived not only five centuries.Lorem ipsum dolor sitam consectetur adipiscg sedo eiusmod tempor incididuntlabore dolor ipsum dolor sit amet, consectetur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row no-gutters">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="portfolio-box1">
+                    <div class="item-img">
+                        <a href="#"><img src="{{asset('assets/img/blog/blog5.jpg') }}"" alt="blog" width="570" height="650"></a>
+                        <div class="item-content">
+                            <div class="item-number">01</div>
+                            <p class="heading-subtitle">Business Strategy</p>
+                            <h3 class="heading-title">Investment Planning</h3>
+                            <p class="portfolio-para">Bohen an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <div class="item-button">
+                                <a href="portfolio2.html" class="item-btn">+ <span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="portfolio-box1">
+                    <div class="item-img">
+                        <a href="#"><img src="{{asset('assets/img/blog/blog6.jpg') }}"" alt="blog" width="570" height="650"></a>
+                        <div class="item-content">
+                            <div class="item-number">02</div>
+                            <p class="heading-subtitle">Business Strategy</p>
+                            <h3 class="heading-title">Investment Planning</h3>
+                            <p class="portfolio-para">Bohen an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <div class="item-button">
+                                <a href="portfolio2.html" class="item-btn">+ <span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="portfolio-box1">
+                    <div class="item-img">
+                        <a href="#"><img src="{{asset('assets/img/blog/blog7.jpg') }}"" alt="blog" width="570" height="650"></a>
+                        <div class="item-content">
+                            <div class="item-number">03</div>
+                            <p class="heading-subtitle">Business Strategy</p>
+                            <h3 class="heading-title">Investment Planning</h3>
+                            <p class="portfolio-para">Bohen an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <div class="item-button">
+                                <a href="portfolio2.html" class="item-btn">+ <span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="portfolio-box1">
+                    <div class="item-img">
+                        <a href="#"><img src="{{asset('assets/img/blog/blog8.jpg') }}"" alt="blog" width="570" height="650"></a>
+                        <div class="item-content">
+                            <div class="item-number">04</div>
+                            <p class="heading-subtitle">Business Strategy</p>
+                            <h3 class="heading-title">Investment Planning</h3>
+                            <p class="portfolio-para">Bohen an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <div class="item-button">
+                                <a href="portfolio2.html" class="item-btn">+ <span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</section>
+
+<!--=====================================-->
+<!--=            Profit Start           =-->
+<!--=====================================-->
+<section class="company-profit-wrap1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12">
+                <div class="company-profit-box1">
+                    <p class="section-subtitle">Company Profit Chart</p>
+                    <h2 class="section-title">Finbuzz Offers the Best Business Solutions</h2>
+                    <p>Finance when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuriFinance.</p>
+                    <div class="item-button">
+                        <a href="single-service1.html" class="item-btn">Get Survey Today<i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="company-profit-box2">
+                    <div class="item-img">
+                        <img src="{{asset('assets/img/figure/figure13.png') }}" alt="figure" width="586" height="283">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=====================================-->
+<!--=            Call-back Start        =-->
+<!--=====================================-->
+<section class="call-back-wrap">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-lg-5 col-md-12">
+                <div class="call-back-box1">
+                    <h3 class="section-title">Request a Call Back</h3>
+                    <form class="message-box" id="contactForm">
+                        @csrf
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <input type="text" class="form-control" id="inputAddress1" name="name" placeholder="Name" value="{{ old('name') }}" autocomplete="off">
+                                <span class="text-danger" id="name_error"></span>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <input type="email" class="form-control" id="inputAddress2" name="email" placeholder="Email" value="{{ old('email') }}" autocomplete="off">
+                                <span class="text-danger" id="email_error"></span>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <input type="text" class="form-control" id="inputAddress3" name="phone" placeholder="Phone" value="{{ old('phone') }}" autocomplete="off">
+                                <span class="text-danger" id="phone_error"></span>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <textarea id="message" class="form-control" name="message" placeholder="Message" cols="30" rows="4"></textarea>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <button type="submit" id="submitBtn" class="item-btn">Submit Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="call-back-box2">
+                    <div class="item-img">
+                        <img src="{{asset('assets/img/blog/blog4.jpg') }}"" alt="blog" width="690" height="582">
+                        <div class="call-img">
+                            <img src="{{asset('assets/img/figure/figure11.png') }}" alt="figure" width="145" height="295">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=====================================-->
+<!--=            Location Start         =-->
+<!--=====================================-->
+<section class="location-wrap-layout1">
+    <div class="container">
+        <div class="item-heading">
+            <p class="item-subtitle">Our Trusted Clients</p>
+            <h2 class="section-heading">We’ve Situated in Different Countries</h2>    
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="location-box">
+                    <div class="item-img">
+                        <img src="{{asset('assets/img/figure/figure10.png') }}" alt="figure" width="805" height="377">
+                        <div class="map-icon">
+                            <ul>
+                                <li><i class="fas fa-map-marker-alt"></i></li>
+                                <li><i class="fas fa-map-marker-alt"></i></li>
+                                <li><i class="fas fa-map-marker-alt"></i></li>
+                                <li><i class="fas fa-map-marker-alt"></i></li>
+                                <li><i class="fas fa-map-marker-alt"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=====================================-->
+<!--=            Testimonial Start      =-->
+<!--=====================================-->
+<section class="testimonial-wrap1">
+    <div class="container">
+        <div class="testimonial-box1">
+            <div class="slick-carousel slick-slider" data-slick='{"arrows": true, "slidesToShow": 1, "autoplay": false, "vertical": true}'>
+                <div class="slick-slide">
+                    <div class="media">
+                        <div class="item-img">
+                            <img src="{{asset('assets/img/blog/blog3.jpg') }}"" alt="blog" width="285" height="276">
+                            <div class="shape-box">Robert Smith CEO</div>
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="item-quotation">“ when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.”</blockquote>
+                            <div class="quotation-marks"><i class="fas fa-quote-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide">
+                    <div class="media">
+                        <div class="item-img">
+                            <img src="{{asset('assets/img/blog/blog37.jpg') }}"" alt="blog" width="285" height="276">
+                            <div class="shape-box">Robert Smith CEO</div>
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="item-quotation">“ when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.”</blockquote>
+                            <div class="quotation-marks"><i class="fas fa-quote-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide">
+                    <div class="media">
+                        <div class="item-img">
+                            <img src="{{asset('assets/img/blog/blog38.jpg') }}"" alt="blog" width="285" height="276">
+                            <div class="shape-box">Robert Smith CEO</div>
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="item-quotation">“ when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.”</blockquote>
+                            <div class="quotation-marks"><i class="fas fa-quote-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=====================================-->
+<!--=            Blog Start             =-->
+<!--=====================================-->
+<section class="blog-wrap-layout1">
+    <div class="section-top-img">
+        <img src="{{asset('assets/img/figure/figure7.png') }}" alt="figure" width="309" height="147">
+    </div>
+    <div class="container">
+        <p class="section-subtitle">Latest News & Blogs</p>
+        <div class="blog-top-area">
             <div class="row">
                 <div class="col-lg-5">
-                    <div class="project-box1">
-                        <h2 class="section-title">We’ve Done Lot’s Of Awesome Projects</h2>
-                    </div>
+                    <h2 class="section-title">What’s New in Business Area to Know</h2>
                 </div>
                 <div class="col-lg-7">
-                    <div class="project-box2">
-                        <p>Bookan unknown printer took a galley of type and scrambled make It has survived not only five centuries.Lorem ipsum dolor sitam consectetur adipiscg sedo eiusmod tempor incididuntlabore dolor ipsum dolor sit amet, consectetur.</p>
+                    <p>Bookan unknown printer took a galley of type and scrambled make It has survived not only five centuries.Lorem ipsum dolor sitam consectetur adipiscg sedo eiusmod tempor incididuntlabore dolor ipsum dolor sit amet, consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="blog-box1">
+                    <div class="item-img">
+                        <a href="#"><img src="{{asset('assets/img/blog/blog1.jpg') }}"" alt="blog" width="641" height="428"></a>
+                    </div>
+                    <div class="content-box">
+                        <div class="entry-meta">
+                            <ul>
+                                <li><a href="single-blog.html"><i class="fas fa-user"></i>by admin</a></li>
+                                <li><a href="single-blog.html"><i class="fas fa-tag"></i>Finance, News</a></li>
+                            </ul>
+                        </div>
+                        <h2 class="heading-title"><a href="single-blog.html">Control allows you create Finance where users can upload</a></h2>
+                        <div class="blog-date">25 <span>Oct</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="blog-box1">
+                    <div class="item-img">
+                        <a href="#"><img src="{{asset('assets/img/blog/blog2.jpg') }}"" alt="blog" width="641" height="428"></a>
+                    </div>
+                    <div class="content-box">
+                        <div class="entry-meta">
+                            <ul>
+                                <li><a href="single-blog.html"><i class="fas fa-user"></i>by admin</a></li>
+                                <li><a href="single-blog.html"><i class="fas fa-tag"></i>Finance, News</a></li>
+                            </ul>
+                        </div>
+                        <h2 class="heading-title"><a href="single-blog.html">Control allows you create Finance where users can upload</a></h2>
+                        <div class="blog-date">25 <span>Oct</span></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row no-gutters">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="portfolio-box1">
-                        <div class="item-img">
-                            <a href="#"><img src="{{asset('assets/img/blog/blog5.jpg') }}"" alt="blog" width="570" height="650"></a>
-                            <div class="item-content">
-                                <div class="item-number">01</div>
-                                <p class="heading-subtitle">Business Strategy</p>
-                                <h3 class="heading-title">Investment Planning</h3>
-                                <p class="portfolio-para">Bohen an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                                <div class="item-button">
-                                    <a href="portfolio2.html" class="item-btn">+ <span>Read More</span></a>
-                                </div>
+    </div>
+</section>
+
+<!--=====================================-->
+<!--=          Personal Start           =-->
+<!--=====================================-->
+<section class="personal-info-wrap1">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-xl-4 col-lg-8">
+                <div class="personal-details">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6 col-sm-6">
+                            <div class="personal-info-box">
+                                <h2 class="section-title">New York City</h2>
+                                <ul class="information-list">
+                                    <li>120 F 2th Yt, New York NY 1259</li>
+                                    <li>+1 (212) 333-7888</li>
+                                    <li>email@example.com</li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="portfolio-box1">
-                        <div class="item-img">
-                            <a href="#"><img src="{{asset('assets/img/blog/blog6.jpg') }}"" alt="blog" width="570" height="650"></a>
-                            <div class="item-content">
-                                <div class="item-number">02</div>
-                                <p class="heading-subtitle">Business Strategy</p>
-                                <h3 class="heading-title">Investment Planning</h3>
-                                <p class="portfolio-para">Bohen an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                                <div class="item-button">
-                                    <a href="portfolio2.html" class="item-btn">+ <span>Read More</span></a>
-                                </div>
+                        <div class="col-xl-6 col-md-6 col-sm-6">
+                            <div class="personal-info-box">
+                                <h2 class="section-title">Melbourne City</h2>
+                                <ul class="information-list">
+                                    <li>120 F 2th Yt, New York NY 1259</li>
+                                    <li>+1 (212) 333-7888</li>
+                                    <li>email@example.com</li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="portfolio-box1">
-                        <div class="item-img">
-                            <a href="#"><img src="{{asset('assets/img/blog/blog7.jpg') }}"" alt="blog" width="570" height="650"></a>
-                            <div class="item-content">
-                                <div class="item-number">03</div>
-                                <p class="heading-subtitle">Business Strategy</p>
-                                <h3 class="heading-title">Investment Planning</h3>
-                                <p class="portfolio-para">Bohen an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                                <div class="item-button">
-                                    <a href="portfolio2.html" class="item-btn">+ <span>Read More</span></a>
-                                </div>
+                        <div class="col-xl-6 col-md-6 col-sm-6">
+                            <div class="personal-info-box">
+                                <h2 class="section-title">Melbourne City</h2>
+                                <ul class="information-list">
+                                    <li>120 F 2th Yt, New York NY 1259</li>
+                                    <li>+1 (212) 333-7888</li>
+                                    <li>email@example.com</li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="portfolio-box1">
-                        <div class="item-img">
-                            <a href="#"><img src="{{asset('assets/img/blog/blog8.jpg') }}"" alt="blog" width="570" height="650"></a>
-                            <div class="item-content">
-                                <div class="item-number">04</div>
-                                <p class="heading-subtitle">Business Strategy</p>
-                                <h3 class="heading-title">Investment Planning</h3>
-                                <p class="portfolio-para">Bohen an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                                <div class="item-button">
-                                    <a href="portfolio2.html" class="item-btn">+ <span>Read More</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>    
-            </div>
-        </div>
-    </section>
-    <!--=====================================-->
-    <!--=            Profit Start           =-->
-    <!--=====================================-->
-    <section class="company-profit-wrap1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-12">
-                    <div class="company-profit-box1">
-                        <p class="section-subtitle">Company Profit Chart</p>
-                        <h2 class="section-title">Finbuzz Offers the Best Business Solutions</h2>
-                        <p>Finance when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuriFinance.</p>
-                        <div class="item-button">
-                            <a href="single-service1.html" class="item-btn">Get Survey Today<i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-12">
-                    <div class="company-profit-box2">
-                        <div class="item-img">
-                            <img src="{{asset('assets/img/figure/figure13.png') }}" alt="figure" width="586" height="283">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--=====================================-->
-    <!--=            Call-back Start        =-->
-    <!--=====================================-->
-    <section class="call-back-wrap">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-lg-5 col-md-12">
-                    <div class="call-back-box1">
-                        <h3 class="section-title">Request a Call Back</h3>
-                        <form class="message-box" id="contactForm">
-                            @csrf
-                            <div class="row">
-                                <div class="form-group col-lg-12">
-                                    <input type="text" class="form-control" id="inputAddress1" name="name" placeholder="Name" value="{{ old('name') }}" autocomplete="off">
-                                    <span class="text-danger" id="name_error"></span>
-                                </div>
-                                <div class="form-group col-lg-12">
-                                    <input type="email" class="form-control" id="inputAddress2" name="email" placeholder="Email" value="{{ old('email') }}" autocomplete="off">
-                                    <span class="text-danger" id="email_error"></span>
-                                </div>
-                                <div class="form-group col-lg-12">
-                                    <input type="text" class="form-control" id="inputAddress3" name="phone" placeholder="Phone" value="{{ old('phone') }}" autocomplete="off">
-                                    <span class="text-danger" id="phone_error"></span>
-                                </div>
-                                <div class="form-group col-lg-12">
-                                    <textarea id="message" class="form-control" name="message" placeholder="Message" cols="30" rows="4"></textarea>
-                                </div>
-                                <div class="form-group col-lg-12">
-                                    <button type="submit" id="submitBtn" class="item-btn">Submit Now</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-12">
-                    <div class="call-back-box2">
-                        <div class="item-img">
-                            <img src="{{asset('assets/img/blog/blog4.jpg') }}"" alt="blog" width="690" height="582">
-                            <div class="call-img">
-                                <img src="{{asset('assets/img/figure/figure11.png') }}" alt="figure" width="145" height="295">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--=====================================-->
-    <!--=            Location Start         =-->
-    <!--=====================================-->
-    <section class="location-wrap-layout1">
-        <div class="container">
-            <div class="item-heading">
-                <p class="item-subtitle">Our Trusted Clients</p>
-                <h2 class="section-heading">We’ve Situated in Different Countries</h2>    
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="location-box">
-                        <div class="item-img">
-                            <img src="{{asset('assets/img/figure/figure10.png') }}" alt="figure" width="805" height="377">
-                            <div class="map-icon">
-                                <ul>
-                                    <li><i class="fas fa-map-marker-alt"></i></li>
-                                    <li><i class="fas fa-map-marker-alt"></i></li>
-                                    <li><i class="fas fa-map-marker-alt"></i></li>
-                                    <li><i class="fas fa-map-marker-alt"></i></li>
-                                    <li><i class="fas fa-map-marker-alt"></i></li>
+                        <div class="col-xl-6 col-md-6 col-sm-6">
+                            <div class="personal-info-box">
+                                <h2 class="section-title">Melbourne City</h2>
+                                <ul class="information-list">
+                                    <li>120 F 2th Yt, New York NY 1259</li>
+                                    <li>+1 (212) 333-7888</li>
+                                    <li>email@example.com</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--=====================================-->
-    <!--=            Testimonial Start      =-->
-    <!--=====================================-->
-    <section class="testimonial-wrap1">
-        <div class="container">
-            <div class="testimonial-box1">
-                <div class="slick-carousel slick-slider" data-slick='{"arrows": true, "slidesToShow": 1, "autoplay": false, "vertical": true}'>
-                    <div class="slick-slide">
-                        <div class="media">
-                            <div class="item-img">
-                                <img src="{{asset('assets/img/blog/blog3.jpg') }}"" alt="blog" width="285" height="276">
-                                <div class="shape-box">Robert Smith CEO</div>
-                            </div>
-                            <div class="media-body">
-                                <blockquote class="item-quotation">“ when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.”</blockquote>
-                                <div class="quotation-marks"><i class="fas fa-quote-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slick-slide">
-                        <div class="media">
-                            <div class="item-img">
-                                <img src="{{asset('assets/img/blog/blog37.jpg') }}"" alt="blog" width="285" height="276">
-                                <div class="shape-box">Robert Smith CEO</div>
-                            </div>
-                            <div class="media-body">
-                                <blockquote class="item-quotation">“ when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.”</blockquote>
-                                <div class="quotation-marks"><i class="fas fa-quote-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slick-slide">
-                        <div class="media">
-                            <div class="item-img">
-                                <img src="{{asset('assets/img/blog/blog38.jpg') }}"" alt="blog" width="285" height="276">
-                                <div class="shape-box">Robert Smith CEO</div>
-                            </div>
-                            <div class="media-body">
-                                <blockquote class="item-quotation">“ when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.”</blockquote>
-                                <div class="quotation-marks"><i class="fas fa-quote-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-xl-8 col-lg-4 d-xl-block d-none">
+                <div class="location-img">
+                    <div id="googleMap" class="google-map"></div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--=====================================-->
-    <!--=            Blog Start             =-->
-    <!--=====================================-->
-    <section class="blog-wrap-layout1">
-        <div class="section-top-img">
-            <img src="{{asset('assets/img/figure/figure7.png') }}" alt="figure" width="309" height="147">
-        </div>
-        <div class="container">
-            <p class="section-subtitle">Latest News & Blogs</p>
-            <div class="blog-top-area">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <h2 class="section-title">What’s New in Business Area to Know</h2>
-                    </div>
-                    <div class="col-lg-7">
-                        <p>Bookan unknown printer took a galley of type and scrambled make It has survived not only five centuries.Lorem ipsum dolor sitam consectetur adipiscg sedo eiusmod tempor incididuntlabore dolor ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="blog-box1">
-                        <div class="item-img">
-                            <a href="#"><img src="{{asset('assets/img/blog/blog1.jpg') }}"" alt="blog" width="641" height="428"></a>
-                        </div>
-                        <div class="content-box">
-                            <div class="entry-meta">
-                                <ul>
-                                    <li><a href="single-blog.html"><i class="fas fa-user"></i>by admin</a></li>
-                                    <li><a href="single-blog.html"><i class="fas fa-tag"></i>Finance, News</a></li>
-                                </ul>
-                            </div>
-                            <h2 class="heading-title"><a href="single-blog.html">Control allows you create Finance where users can upload</a></h2>
-                            <div class="blog-date">25 <span>Oct</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="blog-box1">
-                        <div class="item-img">
-                            <a href="#"><img src="{{asset('assets/img/blog/blog2.jpg') }}"" alt="blog" width="641" height="428"></a>
-                        </div>
-                        <div class="content-box">
-                            <div class="entry-meta">
-                                <ul>
-                                    <li><a href="single-blog.html"><i class="fas fa-user"></i>by admin</a></li>
-                                    <li><a href="single-blog.html"><i class="fas fa-tag"></i>Finance, News</a></li>
-                                </ul>
-                            </div>
-                            <h2 class="heading-title"><a href="single-blog.html">Control allows you create Finance where users can upload</a></h2>
-                            <div class="blog-date">25 <span>Oct</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--=====================================-->
-    <!--=          Personal Start           =-->
-    <!--=====================================-->
-    <section class="personal-info-wrap1">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-xl-4 col-lg-8">
-                    <div class="personal-details">
-                        <div class="row">
-                            <div class="col-xl-6 col-md-6 col-sm-6">
-                                <div class="personal-info-box">
-                                    <h2 class="section-title">New York City</h2>
-                                    <ul class="information-list">
-                                        <li>120 F 2th Yt, New York NY 1259</li>
-                                        <li>+1 (212) 333-7888</li>
-                                        <li>email@example.com</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-md-6 col-sm-6">
-                                <div class="personal-info-box">
-                                    <h2 class="section-title">Melbourne City</h2>
-                                    <ul class="information-list">
-                                        <li>120 F 2th Yt, New York NY 1259</li>
-                                        <li>+1 (212) 333-7888</li>
-                                        <li>email@example.com</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-md-6 col-sm-6">
-                                <div class="personal-info-box">
-                                    <h2 class="section-title">Melbourne City</h2>
-                                    <ul class="information-list">
-                                        <li>120 F 2th Yt, New York NY 1259</li>
-                                        <li>+1 (212) 333-7888</li>
-                                        <li>email@example.com</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-md-6 col-sm-6">
-                                <div class="personal-info-box">
-                                    <h2 class="section-title">Melbourne City</h2>
-                                    <ul class="information-list">
-                                        <li>120 F 2th Yt, New York NY 1259</li>
-                                        <li>+1 (212) 333-7888</li>
-                                        <li>email@example.com</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-8 col-lg-4 d-xl-block d-none">
-                    <div class="location-img">
-                        <div id="googleMap" class="google-map"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="figure-img1">
-            <img src="{{asset('assets/img/figure/figure5.png') }}" alt="figure" width="872" height="724">
-        </div>
-        <div class="figure-img2">
-            <img src="{{asset('assets/img/figure/figure6.png') }}" alt="figure" width="487" height="269">
-        </div>
-    </section>
+    </div>
+    <div class="figure-img1">
+        <img src="{{asset('assets/img/figure/figure5.png') }}" alt="figure" width="872" height="724">
+    </div>
+    <div class="figure-img2">
+        <img src="{{asset('assets/img/figure/figure6.png') }}" alt="figure" width="487" height="269">
+    </div>
+</section>
 
 
 @endsection
