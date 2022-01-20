@@ -41,9 +41,9 @@
                                
                                
                             @if($slider->status == 1)
-                                <a href="" class="btn btn-danger" title="Inactive Now"><i class="fa fa-arrow-down"></i> </a>
+                                <a href="{{route('slider.inactive',$slider->id)}}" class="btn btn-danger" title="Inactive Now"><i class="fa fa-arrow-down"></i> </a>
                                     @else
-                                <a href="" class="btn btn-success" title="Active Now"><i class="fa fa-arrow-up"></i> </a>
+                                <a href="{{route('slider.active',$slider->id)}}" class="btn btn-success" title="Active Now"><i class="fa fa-arrow-up"></i> </a>
                                     @endif
                                
                                

@@ -109,7 +109,7 @@
                                                 <td>{{ optional($menu)->sub_menu_slug }}</td>
                                                 <td>{{ optional($menu)->sub_menu_ulr }}</td>
                                                 <td><a href="{{route('admin.submenu.edit',$menu->id)}}" class="d-flex align-items-center" target="_self">edit</a></td>
-                                                {{-- <td><a href="{{route('admin.menu.delete',$menu->id)}}" class="d-flex align-items-center" target="_self">delete</a></td> --}}
+                                                <td><a href="{{route('admin.submenu.delete',$menu->id)}}" class="d-flex align-items-center" target="_self">delete</a></td>
 
 
                                             </tr>
