@@ -73,6 +73,29 @@
         </li>
         <!-- Add Service Sidebar Menu End -->
 
+        <!-- Our Team START -->
+        <li class="nav-item  ">
+            <a href="javascript:void(0)" class="d-flex align-items-center" target="_self">
+                <i data-feather="file-text"></i>
+                <span class="menu-title text-truncate">Our Team</span>
+            </a>
+            <ul class="menu-content">
+                <li>
+                    <a href="{{ route('our-team.create') }}" class="d-flex align-items-center" target="_self">
+                        <i data-feather="circle"></i>
+                        <span class="menu-item text-truncate">Create</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('our-team.manage') }}" class="d-flex align-items-center" target="_self">
+                        <i data-feather="circle"></i>
+                        <span class="menu-item text-truncate">Manage</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- Our Team End -->
+
         <!-- Project Category START -->
         <li class="nav-item  ">
             <a href="javascript:void(0)" class="d-flex align-items-center" target="_self">

@@ -26,7 +26,7 @@ class ProjectController extends Controller
             'details' => 'required',
             'target' => 'required',
             'link' => 'required',
-            'image' => 'required|mimes:jpg.png,jpeg,gif|image',
+            'image' => 'required|mimes:jpg,png,jpeg,gif|image',
             'start_date' => 'required',
             'end_date' => 'required',
         ]);
@@ -40,7 +40,7 @@ class ProjectController extends Controller
         $project = new Project();
 
         //Project Image Start
-        if ($path = $request->hasfile('image')) {
+        if ($request->hasfile('image')) {
             $file = $request->file('image');
             $extention = $file->getClientOriginalExtension();
             $filename = time() . '.' . $extention;

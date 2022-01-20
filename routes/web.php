@@ -3,10 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\MenuController;
+use App\Http\Controllers\Backend\TeamController;
 use App\Http\Controllers\Backend\ProjectController;
 use App\Http\Controllers\Backend\ProjectCategoryController;
 use App\Http\Controllers\Backend\SliderController;
-
 use App\Http\Controllers\Backend\AdminProfileController;
 use App\Http\Controllers\Backend\ServiceController;
 use App\Http\Controllers\Backend\WhatWeDoController;
@@ -48,11 +48,13 @@ Route::get('/admin/profile', [AdminProfileController::class, 'AdminProfile'])->n
 
 
 // Bappa
-// For Contact Route
-Route::post('/contact/store', [ContactController::class, 'ContactStore']);
-Route::get('/show/contacts/data', [ContactController::class, 'getData']);
-Route::get('/contacts/list', [ContactController::class, 'ContactsList'])->name('contacts.list');
-Route::post('/contact/delete/{id}', [ContactController::class, 'ContactDelete']);
+
+Route::prefix('our-team')->group(function(){
+    Route::get('/create', [TeamController::class, 'create'])->name('our-team.create');
+    Route::post('/store', [TeamController::class, 'store']);
+    Route::get('/manage', [TeamController::class, 'manage'])->name('our-team.manage');
+    Route::get('/show/list', [TeamController::class, 'showMembers']);
+});
 
 // For Project Category Route
 Route::get('/project/category/create', [ProjectCategoryController::class, 'Create'])->name('project.category.create');
@@ -68,6 +70,13 @@ Route::get('/project/manage', [ProjectController::class, 'manage'])->name('proje
 Route::get('/show/projects', [ProjectController::class, 'getProjectsData']);
 Route::post('/project/delete/{id}', [ProjectController::class, 'delete']);
 
+// For Contact Route
+Route::post('/contact/store', [ContactController::class, 'ContactStore']);
+Route::get('/show/contacts/data', [ContactController::class, 'getData']);
+Route::get('/contacts/list', [ContactController::class, 'ContactsList'])->name('contacts.list');
+Route::post('/contact/delete/{id}', [ContactController::class, 'ContactDelete']);
+
+//End Bappa
 
 
 Route::get('/menu/add', [MenuController::class, 'addMenu'])->name('admin.menu.add');

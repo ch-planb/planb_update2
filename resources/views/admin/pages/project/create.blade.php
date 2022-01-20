@@ -83,7 +83,7 @@
                             </div>
                             
                             <div class="col-12">
-                                <button type="reset" id="submitData" class="btn btn-primary mr-1">Submit</button>
+                                <button type="submit" id="submitData" class="btn btn-primary mr-1">Submit</button>
                                 <button type="reset" class="btn btn-outline-secondary">Reset</button>
                             </div>
                         </div>
