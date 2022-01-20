@@ -86,5 +86,11 @@ class MenuController extends Controller
         return back()->with("success", "congo!the sub menu has been updated");
     }
 
+    
+    public function  deleteSubMenuPage($id){
+        $sub_menu=Submenu::find($id)->delete();
+        return back();   
+    }
+
     //------------ menu and sub menu crud ends---------------//
 }

@@ -9,8 +9,10 @@ use App\Http\Controllers\Backend\SliderController;
 
 use App\Http\Controllers\Backend\AdminProfileController;
 use App\Http\Controllers\Backend\ServiceController;
+use App\Http\Controllers\Backend\TestimonialController;
 use App\Http\Controllers\Backend\WhatWeDoController;
 use App\Http\Controllers\Backend\ContactController;
+
 use Laravel\Jetstream\Rules\Role;
 
 Route::get('/', function () {
@@ -81,7 +83,7 @@ Route::post('/submenu/submit', [MenuController::class, 'submitSubMenu'])->name('
 Route::get('/submenu/edit/{id}', [MenuController::class, 'editSubMenuPage'])->name('admin.submenu.edit');
 
 Route::post('/submenu/update/{id}', [MenuController::class, 'updateSubMenu'])->name('admin.submenu.update');
-
+Route::get('/submenu/delete/{id}', [MenuController::class, 'deleteSubMenuPage'])->name('admin.submenu.delete');
 
 
 
@@ -89,7 +91,9 @@ Route::post('/submenu/update/{id}', [MenuController::class, 'updateSubMenu'])->n
 Route::prefix('slider')->group(function(){
     Route::get('/view', [SliderController::class, 'SliderView'])->name('slider.view');
     Route::post('/store', [SliderController::class, 'SliderStore'])->name('slider.store');
+    Route::get('/inactive/{id}', [SliderController::class, 'SliderInactive'])->name('slider.inactive');
 
+    Route::get('/active/{id}', [SliderController::class, 'SliderActive'])->name('slider.active');
 
 });
 // ============What We do all routes start by arko==================
@@ -120,3 +124,17 @@ Route::group(['prefix'=> 'admin', 'middleware'=>['admin']], function(){
 
 
 // ============service all routes end by arko==================
+
+
+
+
+// ============slider all routes end by ornob==================
+
+Route::prefix('testimonials')->group(function(){
+    Route::get('/view', [TestimonialController::class, 'testimonialView'])->name('testimonials.view');
+    Route::post('/store', [TestimonialController::class, 'testimonialStore'])->name('testimonial.store');
+
+
+});
+
+// ============slider all routes end by ornob==================
