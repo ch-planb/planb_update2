@@ -20,10 +20,10 @@ class CreateTeamsTable extends Migration
             $table->string('fb_link');
             $table->string('twitter_link');
             $table->string('linkedin_link');
-            $table->string('insta_link');
-            $table->string('skype_link');
+            $table->string('insta_link')->nullable();
+            $table->string('skype_link')->nullable();
             $table->string('profile_picture');
-            $table->string('join_date');
+            $table->date('join_date');
             $table->enum('status', ['Active', 'Inactive'])->default('Active');
             $table->timestamps();
         });

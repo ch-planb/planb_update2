@@ -12,8 +12,8 @@ class TestimonialController extends Controller
     //
     public function testimonialView(){
         $clients=Client::all();
-    
-        $testimonials=Testimonial::latest()->get();
+        $testimonials = Testimonial::with('client')->latest()->get();
+
         return view('admin.pages.testimonial.testimonial_view',compact('testimonials'
     ,'clients'));
     }

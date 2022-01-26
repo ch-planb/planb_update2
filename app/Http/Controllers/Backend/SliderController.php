@@ -8,7 +8,7 @@ use App\Models\Slider;
 class SliderController extends Controller
 {
     public function SliderView(){
-        $sliders=Slider::latest()->get();
+        $sliders = Slider::latest()->get();
         return view('admin.pages.slider.slider_view',compact('sliders'));
     }
 
@@ -27,9 +27,6 @@ class SliderController extends Controller
         $slider->save();
        
         return back();
-
-
-
     }
 
     public function SliderInactive($id){

@@ -57,7 +57,7 @@
         <!--=====================================-->
         <!--=            Slider Start           =-->
         <!--=====================================-->
-        @include('frontend.body.slider')
+        
       
 
        <!-- yield -->
@@ -74,23 +74,23 @@
             <div class="close-btn offcanvas-close"><i class="fas fa-times"></i></div>
             <div class="offcanvas-content">
                 <div class="offcanvas-logo">
-                    <a href="index.html"><img src="img/logo/logo2.png" alt="Logo" width="180" height="45"></a>
+                    <a href="index.html"><img src="{{asset('upload/logo/' .$companyInfo->logo)}}" alt="Logo" width="180" height="45"></a>
                 </div>
                 <ul class="offcanvas-menu">
                     <li class="nav-item">
-                        <a href="index.html">Home</a>
+                        <a href="{{url('/')}}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html">About</a>
+                        <a href="about.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="blog1.html">Blog 1</a>
+                        <a href="service1.html">Service</a>
                     </li>
                     <li class="nav-item">
-                        <a href="service1.html">Service 1</a>
+                        <a href="blog1.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a href="team1.html">Team 1</a>
+                        <a href="team1.html">Our Team</a>
                     </li>
                     <li class="nav-item">
                         <a href="contact.html">Contact</a>
@@ -99,12 +99,11 @@
                 <div class="offcanvas-footer">
                     <div class="item-title">Follow Me</div>
                     <ul class="offcanvas-social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                        <li><a href="#"><i class="fas fa-rss"></i></a></li>
+                        <li><a href="{{$companyInfo->fb_link}}"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="{{$companyInfo->twitter_link}}"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="{{$companyInfo->linkedin_link}}"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="{{$companyInfo->insta_link}}"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="{{$companyInfo->skype_link}}"><i class="fab fa-skype"></i></a></li>
                     </ul>
                 </div>
             </div>

@@ -158,7 +158,7 @@
         <li class="nav-item">
             <a href="javascript:void(0)" class="d-flex align-items-center" target="_self">
                 <i data-feather="file-text"></i>
-                <span class="menu-title text-truncate">testimonials</span>
+                <span class="menu-title text-truncate">Testimonials</span>
             </a>
             <ul class="menu-content">
                 <li>
@@ -170,12 +170,34 @@
             </ul>
         </li>
 
-
-        <li class="nav-item  ">
-            <a href="{{ route('contacts.list') }}" class="d-flex align-items-center" target="_self" id="contactList">
-                <i data-feather="home"></i>
+        <li class="nav-item">
+            <a href="javascript:void(0)" class="d-flex align-items-center" target="_self">
+                <i data-feather="file-text"></i>
                 <span class="menu-title text-truncate">Contacts</span>
             </a>
+            <ul class="menu-content">
+                <li>
+                    <a href="{{ route('contacts.list') }}" class="d-flex align-items-center" target="_self" id="contactList">
+                        <i data-feather="home"></i>
+                        <span class="menu-title text-truncate">Manage</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a href="javascript:void(0)" class="d-flex align-items-center" target="_self">
+                <i data-feather="file-text"></i>
+                <span class="menu-title text-truncate">Company Info</span>
+            </a>
+            <ul class="menu-content">
+                <li>
+                    <a href="{{ route('company.info') }}" class="d-flex align-items-center" target="_self" id="contactList">
+                        <i data-feather="home"></i>
+                        <span class="menu-title text-truncate">Update Info</span>
+                    </a>
+                </li>
+            </ul>
         </li>
     </ul>
 </div>

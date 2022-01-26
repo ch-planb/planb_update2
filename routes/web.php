@@ -8,16 +8,24 @@ use App\Http\Controllers\Backend\ProjectController;
 use App\Http\Controllers\Backend\ProjectCategoryController;
 use App\Http\Controllers\Backend\SliderController;
 use App\Http\Controllers\Backend\AdminProfileController;
+use App\Http\Controllers\Backend\CompanyInfoController;
 use App\Http\Controllers\Backend\ServiceController;
 use App\Http\Controllers\Backend\TestimonialController;
 use App\Http\Controllers\Backend\WhatWeDoController;
 use App\Http\Controllers\Backend\ContactController;
-
+use App\Http\Controllers\Frontend\IndexController;
 use Laravel\Jetstream\Rules\Role;
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
+// Route::get('/', function () {
+//     return view('frontend.index');
+// });
+
+// ============ Route For Frontend  =========================
+Route::get('/', [IndexController::class, 'index'])->name('home');
+Route::get('/projects', [IndexController::class, 'projects'])->name('projects');
+Route::get('/project/details/{id}', [IndexController::class, 'project_single_page'])->name('project-details');
+
+
 
 
 
@@ -25,7 +33,6 @@ Route::group(['prefix'=> 'admin', 'middleware'=>['admin']], function(){
 	Route::get('/login', [AdminController::class, 'loginForm']);
 	Route::post('/login',[AdminController::class, 'store'])->name('admin.login');
     //========================== menu and sub menu routes======================//
-
 });
 
 
@@ -50,12 +57,13 @@ Route::get('/admin/profile', [AdminProfileController::class, 'AdminProfile'])->n
 
 
 // Bappa
-
+// For Our Team Route
 Route::prefix('our-team')->group(function(){
     Route::get('/create', [TeamController::class, 'create'])->name('our-team.create');
     Route::post('/store', [TeamController::class, 'store']);
     Route::get('/manage', [TeamController::class, 'manage'])->name('our-team.manage');
     Route::get('/show/list', [TeamController::class, 'showMembers']);
+    Route::post('/delete/{id}', [TeamController::class, 'delete']);
 });
 
 // For Project Category Route
@@ -64,6 +72,7 @@ Route::post('/project/category/store', [ProjectCategoryController::class, 'store
 Route::get('/show/projects/categories', [ProjectCategoryController::class, 'getProjectCategoriesData']);
 Route::get('/project/category/manage', [ProjectCategoryController::class, 'manage'])->name('project.category.manage');
 Route::post('/project/category/delete/{id}', [ProjectCategoryController::class, 'delete']);
+Route::post('/project/category/status/{id}', [ProjectCategoryController::class, 'changeStatus']);
 
 // For Projects Route
 Route::get('/project/create', [ProjectController::class, 'Create'])->name('project.create');
@@ -71,6 +80,7 @@ Route::post('/project/store', [ProjectController::class, 'ProjectStore']);
 Route::get('/project/manage', [ProjectController::class, 'manage'])->name('project.manage');
 Route::get('/show/projects', [ProjectController::class, 'getProjectsData']);
 Route::post('/project/delete/{id}', [ProjectController::class, 'delete']);
+Route::post('/project/change-status/{id}', [ProjectController::class, 'changeStatus']);
 
 // For Contact Route
 Route::post('/contact/store', [ContactController::class, 'ContactStore']);
@@ -78,6 +88,11 @@ Route::get('/show/contacts/data', [ContactController::class, 'getData']);
 Route::get('/contacts/list', [ContactController::class, 'ContactsList'])->name('contacts.list');
 Route::post('/contact/delete/{id}', [ContactController::class, 'ContactDelete']);
 
+// For Company Info Route
+Route::prefix('company-info')->group(function(){
+    Route::get('/show', [CompanyInfoController::class, 'updateForm'])->name('company.info');
+    Route::post('/update', [CompanyInfoController::class, 'update'])->name('company-info.update');
+});
 //End Bappa
 
 

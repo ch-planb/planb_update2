@@ -171,11 +171,11 @@ Section background image
                 menu.addClass('rt-sticky');
                 showDiv.removeClass('divRemove');
                
-                removeCol.removeClass('col-xl-8');
-                removeCol.removeClass('col-lg-9');
+                removeCol.removeClass('col-xl-10');
+                removeCol.removeClass('col-lg-10');
 
-                removeCol.addClass('col-xl-6');
-                removeCol.addClass('col-lg-7');
+                removeCol.addClass('col-xl-8');
+                removeCol.addClass('col-lg-8');
 
                 logoDiv.fadeIn(500).removeClass('hideLogo');
                 
@@ -184,11 +184,11 @@ Section background image
                 menu.removeClass('rt-sticky');
                 showDiv.addClass('divRemove');
 
-                removeCol.removeClass('col-xl-6');
-                removeCol.removeClass('col-lg-7');
+                removeCol.removeClass('col-xl-8');
+                removeCol.removeClass('col-lg-8');
 
-                removeCol.addClass('col-xl-8');
-                removeCol.addClass('col-lg-9');
+                removeCol.addClass('col-xl-10');
+                removeCol.addClass('col-lg-10');
                 
                 
                 stickyPlaceHolder.height(0);

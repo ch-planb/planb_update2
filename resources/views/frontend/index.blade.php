@@ -2,93 +2,8 @@
 @section('content')
 
 
-<!--=====================================-->
-<!--=            Slider Start           =-->
-<!--=====================================-->
-<div class="slider-area2 slider-layout2">
-    <div class="slider-bg-img1" data-sal="zoom-in" data-sal-duration="1500" data-sal-delay="300">
-        <img src="{{ asset('assets/img/figure/figure98.png')}}" alt="figure" width="772" height="366"> 
-    </div>
-    <div class="slider-bg-img2">
-        <img src="{{ asset('assets/img/figure/figure99.png')}}" alt="figure" data-sal="slide-up" data-sal-duration="1300" data-sal-delay="700" width="211" height="96"> 
-    </div>
-    <div class="bend niceties preview-1">
-        <div id="ensign-nivoslider-2" class="slides">
-            <img src="{{ asset('assets/img/slider/slider3.png')}}" alt="slider" width="1920" height="720" title="#slider-direction-1" />
-            <img src="{{ asset('assets/img/slider/slider2.png')}}" alt="slider" width="1920" height="720" title="#slider-direction-2" />
-            <img src="{{ asset('assets/img/slider/slider1.png')}}" alt="slider" width="1920" height="720" title="#slider-direction-3" />
-        </div>
-        <div id="slider-direction-1" class="t-cn slider-direction">
-            <div class="slider-content s-tb slide-1">
-                <div class="text-left title-container s-tb-c">
-                    <div class="container">
-                        <p class="item-subtitle">Find The Right Way</p>
-                        <h2 class="item-title">Business Solutions For All Enterprises</h2>
-                        <div class="item-paragraph">Bhen an unknown printer took a galley of type and scrambled ype specimen book. It has survived .</div>
-                        <div class="slider-button">
-                            <a href="service1.html" class="slider-btn">Free Consulting<i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                        <div class="social-site">
-                            <ul>
-                                <li><span>Follow Us On :</span><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="slider-direction-2" class="t-cn slider-direction">
-            <div class="slider-content s-tb slide-2">
-                <div class="text-left title-container s-tb-c">
-                    <div class="container">
-                        <p class="item-subtitle">Find The Right Way</p>
-                        <h2 class="item-title">Business Solutions For All Enterprises</h2>
-                        <div class="item-paragraph">Bhen an unknown printer took a galley of type and scrambled ype specimen book. It has survived .</div>
-                        <div class="slider-button">
-                            <a href="service1.html" class="slider-btn">Free Consulting<i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                        <div class="social-site">
-                            <ul>
-                                <li><span>Follow Us On :</span><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="slider-direction-3" class="t-cn slider-direction">
-            <div class="slider-content s-tb slide-3">
-                <div class="text-left title-container s-tb-c">
-                    <div class="container">
-                        <p class="item-subtitle">Find The Right Way</p>
-                        <h2 class="item-title">Business Solutions For All Enterprises</h2>
-                        <div class="item-paragraph">Bhen an unknown printer took a galley of type and scrambled ype specimen book. It has survived .</div>
-                        <div class="slider-button">
-                            <a href="service1.html" class="slider-btn">Free Consulting<i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                        <div class="social-site">
-                            <ul>
-                                <li><span>Follow Us On :</span><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+@include('frontend.body.slider')
+
 
 <!--=====================================-->
 <!--=            Banner Start           =-->
@@ -184,9 +99,9 @@
 <!--=====================================-->
 <section class="about-finnaco-wrap2">
     <div class="container">
-        <div class="background-image">
+        {{-- <div class="background-image">
             <img src="{{asset('assets/img/figure/figure64.png')}}" alt="figure" width="174" height="173">
-        </div>
+        </div> --}}
         <div class="row">
             <div class="col-lg-12">
                 <div class="about-box3">
@@ -268,107 +183,23 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-6">
+            @foreach ($services as $service)
+            <div class="col-lg-3 col-md-6 mb-4">
                 <div class="consulting-service4">
-                    <h3 class="heading-title">Target People</h3>
+                    <h3 class="heading-title">{{$service->title}}</h3>
                     <div class="item-img">
-                        <img src="{{asset('assets/img/figure/figure59.png')}}" alt="figure" width="87" height="65">
+                        <img src="{{asset('upload/service_icon/' .$service->icon)}}" alt="figure">
                     </div>
-                    <p>when unknown printer tookar galleytype ande scrambled imake type.</p>
+                    <p>{{$service->description}}</p>
                     <div class="consulting-button">
                         <a href="service2.html" class="consulting-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="consulting-service4">
-                    <h3 class="heading-title">Tax Advisory</h3>
-                    <div class="item-img">
-                        <img src="{{asset('assets/img/figure/figure60.png')}}" alt="figure" width="49" height="63">
-                    </div>
-                    <p>when unknown printer tookar galleytype ande scrambled imake type.</p>
-                    <div class="consulting-button">
-                        <a href="service2.html" class="consulting-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="consulting-service4">
-                    <h3 class="heading-title">Investment</h3>
-                    <div class="item-img">
-                        <img src="{{asset('assets/img/figure/figure61.png')}}" alt="figure" width="45" height="64">
-                    </div>
-                    <p>when unknown printer tookar galleytype ande scrambled imake type.</p>
-                    <div class="consulting-button">
-                        <a href="service2.html" class="consulting-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="consulting-service4">
-                    <h3 class="heading-title">Saving Money</h3>
-                    <div class="item-img">
-                        <img src="{{asset('assets/img/figure/figure62.png')}}" alt="figure" width="42" height="64">
-                    </div>
-                    <p>when unknown printer tookar galleytype ande scrambled imake type.</p>
-                    <div class="consulting-button">
-                        <a href="service2.html" class="consulting-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
         <br>
         <br>
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="consulting-service4">
-                    <h3 class="heading-title">Target People</h3>
-                    <div class="item-img">
-                        <img src="{{asset('assets/img/figure/figure59.png')}}" alt="figure" width="87" height="65">
-                    </div>
-                    <p>when unknown printer tookar galleytype ande scrambled imake type.</p>
-                    <div class="consulting-button">
-                        <a href="service2.html" class="consulting-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="consulting-service4">
-                    <h3 class="heading-title">Tax Advisory</h3>
-                    <div class="item-img">
-                        <img src="{{asset('assets/img/figure/figure60.png')}}" alt="figure" width="49" height="63">
-                    </div>
-                    <p>when unknown printer tookar galleytype ande scrambled imake type.</p>
-                    <div class="consulting-button">
-                        <a href="service2.html" class="consulting-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="consulting-service4">
-                    <h3 class="heading-title">Investment</h3>
-                    <div class="item-img">
-                        <img src="{{asset('assets/img/figure/figure61.png')}}" alt="figure" width="45" height="64">
-                    </div>
-                    <p>when unknown printer tookar galleytype ande scrambled imake type.</p>
-                    <div class="consulting-button">
-                        <a href="service2.html" class="consulting-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="consulting-service4">
-                    <h3 class="heading-title">Saving Money</h3>
-                    <div class="item-img">
-                        <img src="{{asset('assets/img/figure/figure62.png')}}" alt="figure" width="42" height="64">
-                    </div>
-                    <p>when unknown printer tookar galleytype ande scrambled imake type.</p>
-                    <div class="consulting-button">
-                        <a href="service2.html" class="consulting-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -389,26 +220,28 @@
             <p>Bookan unknown printer took a galley of type and scrambled make It has survived not only five centuries.</p>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="team-box1">
-                    <div class="item-shape"></div>
-                    <div class="item-img">
-                        <a href="#"><img src="{{asset('assets/img/team/team1.jpg') }}"" alt="team" width="510" height="500"></a>
-                        <ul class="team-social">
-                            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="item-content">
-                        <h3 class="item-title"><a href="team1.html">Robert Gerry</a></h3>
-                        <h4 class="item-subtitle">Ceo & Founder</h4>
+            @foreach ($members as $member)
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-box1">
+                        <div class="item-shape"></div>
+                        <div class="item-img">
+                            <a href="#"><img src="{{asset('upload/Images/Our_Team/'.$member->profile_picture) }}" alt="team" width="510" height="500"></a>
+                            <ul class="team-social">
+                                <li><a href="{{$member->fb_link }}"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="{{$member->twitter_link }}"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="{{$member->linkedin_link }}"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="{{$member->insta_link }}"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="{{$member->skype_link }}"><i class="fab fa-skype"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="item-content">
+                            <h3 class="item-title"><a href="team1.html">{{$member->name }}</a></h3>
+                            <h4 class="item-subtitle">{{$member->designation }}</h4>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
+            @endforeach
+            {{-- <div class="col-lg-4 col-md-6">
                 <div class="team-box1">
                     <div class="item-shape"></div>
                     <div class="item-img">
@@ -445,7 +278,7 @@
                         <h4 class="item-subtitle">Ceo & Founder</h4>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
@@ -462,20 +295,20 @@
                         <img src="{{asset('assets/img/blog/blog39.jpg') }}"" alt="blog" width="586" height="195">
                     </div>
                     <div class="bannar-details">
-                        <h3 class="heading-title">Need Any Financial Help!</h3>
+                        <h3 class="heading-title">Need Any Website Help!</h3>
                         <div class="contact-box2">
                             <div class="item-icon-box">
                                 <div class="item-icon"><i class="far fa-comments"></i></div>   
                                 <div class="banner-content">
                                     <div class="item-hotline">Hotline</div>
-                                    <div class="item-number">009850 9850</div>
+                                    <div class="item-number">{{$companyInfo->mobile}}</div>
                                 </div>
                             </div>
                             <div class="item-icon-box item-icon-box2">
                                 <div class="item-icon"><i class="far fa-envelope"></i></div>   
                                 <div class="banner-content">
                                     <div class="item-hotline">Send Us Email</div>
-                                    <div class="item-number">info@gmail.com</div>
+                                    <div class="item-number">{{$companyInfo->email}}</div>
                                 </div>
                             </div>
                         </div>
@@ -507,70 +340,27 @@
     </div>
     <div class="container-fluid">
         <div class="row no-gutters">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="portfolio-box1">
-                    <div class="item-img">
-                        <a href="#"><img src="{{asset('assets/img/blog/blog5.jpg') }}"" alt="blog" width="570" height="650"></a>
-                        <div class="item-content">
-                            <div class="item-number">01</div>
-                            <p class="heading-subtitle">Business Strategy</p>
-                            <h3 class="heading-title">Investment Planning</h3>
-                            <p class="portfolio-para">Bohen an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                            <div class="item-button">
-                                <a href="portfolio2.html" class="item-btn">+ <span>Read More</span></a>
+            @php
+                $sl = 1;
+            @endphp
+            @foreach ($projects as $project)
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="portfolio-box1">
+                        <div class="item-img">
+                            <a href="#"><img src="{{asset('upload/Images/Project/'.$project->image) }}" alt="blog" width="570" height="650"></a>
+                            <div class="item-content">
+                                <div class="item-number">0{{$sl++}}</div>
+                                <p class="heading-subtitle">{{$project->projectCategory->name}}</p>
+                                <h3 class="heading-title">{{$project->title}}</h3>
+                                <p class="portfolio-para">{{$project->sub_title}}</p>
+                                <div class="item-button">
+                                    <a href="{{route('projects')}}" class="item-btn">+ <span>Read More</span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="portfolio-box1">
-                    <div class="item-img">
-                        <a href="#"><img src="{{asset('assets/img/blog/blog6.jpg') }}"" alt="blog" width="570" height="650"></a>
-                        <div class="item-content">
-                            <div class="item-number">02</div>
-                            <p class="heading-subtitle">Business Strategy</p>
-                            <h3 class="heading-title">Investment Planning</h3>
-                            <p class="portfolio-para">Bohen an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                            <div class="item-button">
-                                <a href="portfolio2.html" class="item-btn">+ <span>Read More</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="portfolio-box1">
-                    <div class="item-img">
-                        <a href="#"><img src="{{asset('assets/img/blog/blog7.jpg') }}"" alt="blog" width="570" height="650"></a>
-                        <div class="item-content">
-                            <div class="item-number">03</div>
-                            <p class="heading-subtitle">Business Strategy</p>
-                            <h3 class="heading-title">Investment Planning</h3>
-                            <p class="portfolio-para">Bohen an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                            <div class="item-button">
-                                <a href="portfolio2.html" class="item-btn">+ <span>Read More</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="portfolio-box1">
-                    <div class="item-img">
-                        <a href="#"><img src="{{asset('assets/img/blog/blog8.jpg') }}"" alt="blog" width="570" height="650"></a>
-                        <div class="item-content">
-                            <div class="item-number">04</div>
-                            <p class="heading-subtitle">Business Strategy</p>
-                            <h3 class="heading-title">Investment Planning</h3>
-                            <p class="portfolio-para">Bohen an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                            <div class="item-button">
-                                <a href="portfolio2.html" class="item-btn">+ <span>Read More</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>    
+            @endforeach
         </div>
     </div>
 </section>
@@ -687,42 +477,20 @@
     <div class="container">
         <div class="testimonial-box1">
             <div class="slick-carousel slick-slider" data-slick='{"arrows": true, "slidesToShow": 1, "autoplay": false, "vertical": true}'>
-                <div class="slick-slide">
-                    <div class="media">
-                        <div class="item-img">
-                            <img src="{{asset('assets/img/blog/blog3.jpg') }}"" alt="blog" width="285" height="276">
-                            <div class="shape-box">Robert Smith CEO</div>
-                        </div>
-                        <div class="media-body">
-                            <blockquote class="item-quotation">“ when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.”</blockquote>
-                            <div class="quotation-marks"><i class="fas fa-quote-right"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slick-slide">
-                    <div class="media">
-                        <div class="item-img">
-                            <img src="{{asset('assets/img/blog/blog37.jpg') }}"" alt="blog" width="285" height="276">
-                            <div class="shape-box">Robert Smith CEO</div>
-                        </div>
-                        <div class="media-body">
-                            <blockquote class="item-quotation">“ when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.”</blockquote>
-                            <div class="quotation-marks"><i class="fas fa-quote-right"></i></div>
+                @foreach ($testimonials as $info)
+                    <div class="slick-slide">
+                        <div class="media">
+                            <div class="item-img">
+                                <img src="{{asset('upload/testimonals/'.$info->slider_img) }}" alt="blog" width="285" height="276">
+                                <div class="shape-box">{{$info->client->name}}</div>
+                            </div>
+                            <div class="media-body">
+                                <blockquote class="item-quotation">“ {{$info->testimonial}}”</blockquote>
+                                <div class="quotation-marks"><i class="fas fa-quote-right"></i></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="slick-slide">
-                    <div class="media">
-                        <div class="item-img">
-                            <img src="{{asset('assets/img/blog/blog38.jpg') }}"" alt="blog" width="285" height="276">
-                            <div class="shape-box">Robert Smith CEO</div>
-                        </div>
-                        <div class="media-body">
-                            <blockquote class="item-quotation">“ when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.”</blockquote>
-                            <div class="quotation-marks"><i class="fas fa-quote-right"></i></div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -789,7 +557,7 @@
 <!--=====================================-->
 <!--=          Personal Start           =-->
 <!--=====================================-->
-<section class="personal-info-wrap1">
+{{-- <section class="personal-info-wrap1">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-xl-4 col-lg-8">
@@ -798,36 +566,6 @@
                         <div class="col-xl-6 col-md-6 col-sm-6">
                             <div class="personal-info-box">
                                 <h2 class="section-title">New York City</h2>
-                                <ul class="information-list">
-                                    <li>120 F 2th Yt, New York NY 1259</li>
-                                    <li>+1 (212) 333-7888</li>
-                                    <li>email@example.com</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-md-6 col-sm-6">
-                            <div class="personal-info-box">
-                                <h2 class="section-title">Melbourne City</h2>
-                                <ul class="information-list">
-                                    <li>120 F 2th Yt, New York NY 1259</li>
-                                    <li>+1 (212) 333-7888</li>
-                                    <li>email@example.com</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-md-6 col-sm-6">
-                            <div class="personal-info-box">
-                                <h2 class="section-title">Melbourne City</h2>
-                                <ul class="information-list">
-                                    <li>120 F 2th Yt, New York NY 1259</li>
-                                    <li>+1 (212) 333-7888</li>
-                                    <li>email@example.com</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-md-6 col-sm-6">
-                            <div class="personal-info-box">
-                                <h2 class="section-title">Melbourne City</h2>
                                 <ul class="information-list">
                                     <li>120 F 2th Yt, New York NY 1259</li>
                                     <li>+1 (212) 333-7888</li>
@@ -851,7 +589,7 @@
     <div class="figure-img2">
         <img src="{{asset('assets/img/figure/figure6.png') }}" alt="figure" width="487" height="269">
     </div>
-</section>
+</section> --}}
 
 
 @endsection

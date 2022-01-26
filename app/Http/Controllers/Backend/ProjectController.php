@@ -71,7 +71,7 @@ class ProjectController extends Controller
 
     public function getProjectsData()
     {
-        $projects = Project::latest()->get();
+        $projects = Project::with('projectCategory')->latest()->get();
         return response()->json($projects);
     }
     public function delete($id)
@@ -81,4 +81,26 @@ class ProjectController extends Controller
         $project->delete();
         return redirect()->back();
     }
+
+    public function changeStatus(Request $request, $id)
+    {
+        $statusChange = Project::find($id);
+
+        if ($statusChange->status == 'Published') {
+
+            $statusChange->status = 'Draft';
+            $statusChange->save();
+
+            return response()->json($statusChange);
+        }else{
+
+            $statusChange->status = 'Published';
+            $statusChange->save();
+
+            return response()->json($statusChange);
+        }
+    }
+
+    
+    
 }
