@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Models\Client;
 use App\Models\CompanyInfo;
+use App\Models\Menu;
 use App\Models\Project;
 use App\Models\Service;
 use App\Models\Slider;
@@ -16,13 +17,14 @@ class IndexController extends Controller
 {
     public function index()
     {
+        $menus = Menu::all();
         $sliders = Slider::latest()->get();
         $members = Team::latest()->get();
         $projects = Project::with('projectCategory')->latest()->limit(4)->get();
         $testimonials = Testimonial::with('client')->latest()->get();
         $companyInfo = CompanyInfo::latest()->first();
         $services = Service::latest()->get();
-        return view('frontend.index', compact('sliders', 'members','projects', 'testimonials', 'companyInfo', 'services'));
+        return view('frontend.index', compact('menus', 'sliders', 'members','projects', 'testimonials', 'companyInfo', 'services'));
     }
     public function projects()
     {

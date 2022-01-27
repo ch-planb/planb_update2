@@ -59,7 +59,7 @@
             <div class="row d-flex align-items-center">
                 <div class="col-xl-2 col-lg-2 divRemove showDiv">
                     <div class="logo-area">
-                        <a href="index.html" class="temp-logo">
+                        <a href="{{url('/')}}" class="temp-logo">
                             <img src="{{asset('upload/logo/' .$companyInfo->logo)}}" width="180" height="45" alt="logo" class="img-fluid">
                         </a>
                     </div>
@@ -75,6 +75,12 @@
                             </li>
                             <li>
                                 <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <a href="{{route('projects')}}">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Price</a>
                             </li>
                             <li>
                                 <a href="#">Blog</a>

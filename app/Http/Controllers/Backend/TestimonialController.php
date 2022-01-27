@@ -29,7 +29,7 @@ class TestimonialController extends Controller
         if ($request->file('slider_img')) {
             $file = $request->file('slider_img');
             $filename = date('YmdHi').$file->getClientOriginalName();
-            $file->move(public_path('upload/testimonals'),$filename);
+            $file->move(public_path('upload/testimonials'),$filename);
             $testimonial['slider_img'] = $filename;
         }
         $testimonial->save();

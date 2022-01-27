@@ -60,7 +60,7 @@ class TeamController extends Controller
             $file = $request->file('profile_picture');
             $extention = $file->getClientOriginalExtension();
             $filename = time() . '.' . $extention;
-            $file->move('Upload/Images/Our_Team', $filename);
+            $file->move('upload/our_team', $filename);
             $path = $filename;
         }
         //Profile Picture End

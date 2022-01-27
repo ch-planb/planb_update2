@@ -74,7 +74,7 @@
             <div class="close-btn offcanvas-close"><i class="fas fa-times"></i></div>
             <div class="offcanvas-content">
                 <div class="offcanvas-logo">
-                    <a href="index.html"><img src="{{asset('upload/logo/' .$companyInfo->logo)}}" alt="Logo" width="180" height="45"></a>
+                    <a href="{{url('/')}}"><img src="{{asset('upload/logo/' .$companyInfo->logo)}}" alt="Logo" width="180" height="45"></a>
                 </div>
                 <ul class="offcanvas-menu">
                     <li class="nav-item">
@@ -85,6 +85,9 @@
                     </li>
                     <li class="nav-item">
                         <a href="service1.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{route('projects')}}">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a href="blog1.html">Blog</a>

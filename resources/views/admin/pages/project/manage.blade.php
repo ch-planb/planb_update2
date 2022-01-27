@@ -15,7 +15,7 @@
                     <thead>
                         <tr>
                             <th class="text-center">SL</th>
-                            <th>Image</th>
+                            <th>Thumbnail</th>
                             <th>Category</th>
                             <th>Client</th>
                             <th>Title</th>
@@ -57,7 +57,7 @@
                         <tr>
                         <td class="text-center">${sl++}</td>
                         <td>
-                        <img src="/Upload/Images/Project/${data.image}" alt="Avatar" height="35" width="35" style="border-radius:50%">
+                        <img src="/upload/project/${data.thumbnail}" alt="Avatar" height="35" width="35" style="border-radius:50%">
                         </td>
                         <td>${data.projectCategory.name}</td>
                         <td>${data.client_id}</td>

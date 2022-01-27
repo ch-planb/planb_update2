@@ -54,7 +54,7 @@
                                     <textarea class="form-control" id="target" rows="3" name="target" placeholder="Write Here..."></textarea>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12">
+                            <div class="col-md-12 col-12">
                                 <div class="form-group">
                                     <label for="link">Project URL</label>
                                     <input type="text" id="link" class="form-control" name="link" placeholder="Project URL" value="{{ old('link')}}"/>
@@ -62,7 +62,16 @@
                             </div>
                             <div class="col-md-6 col-12">
                                 <div class="form-group">
-                                    <label for="customFile">Project Image</label>
+                                    <label for="thumbnail">Thumbnail Image</label>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="thumbnail" name="thumbnail"/>
+                                        <label class="custom-file-label" for="customFile">Choose file</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="form-group">
+                                    <label for="customFile">Image</label>
                                     <div class="custom-file">
                                         <input type="file" class="custom-file-input" id="customFile" name="image"/>
                                         <label class="custom-file-label" for="customFile">Choose file</label>
@@ -130,14 +139,14 @@
                 axios.post('/project/store', data)
                 
                     .then(response => {
-                        console.log(data);
+                        AddForm.reset();
                         Swal.fire(
                             'Created!',
                             'Your file has been created.',
                             'success'
                         )
 
-                        AddForm.reset();
+                        
                     })
                     .catch(error => {
                         console.log(error)

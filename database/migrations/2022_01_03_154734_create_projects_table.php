@@ -21,6 +21,7 @@ class CreateProjectsTable extends Migration
             $table->string('sub_title')->nullable();
             $table->longText('details')->nullable();
             $table->string('image')->nullable();
+            $table->string('thumbnail')->nullable();
             $table->longText('target')->nullable();
             $table->date('start_date')->nullable();
             $table->date('end_date')->nullable();

@@ -4,7 +4,7 @@
             <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6">
                 <div class="footer-left">
                     <div class="footer-logo">
-                        <a href="#"><img src="{{asset('upload/logo/'.$companyInfo->footer_logo )}}" alt="logo" width="180" height="45"></a>
+                        <a href="{{url('/')}}"><img src="{{asset('upload/logo/'.$companyInfo->footer_logo )}}" alt="logo" width="180" height="45"></a>
                     </div>
                     <p>{{$companyInfo->short_description}}</p>
                     <div class="footer-social">

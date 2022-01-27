@@ -8,21 +8,30 @@
     <div class="slider-bg-img2">
         <img src="{{ asset('assets/img/figure/figure99.png')}}" alt="figure" data-sal="slide-up" data-sal-duration="1300" data-sal-delay="700" width="211" height="96"> 
     </div>
+    
     <div class="bend niceties preview-1">
+        @php
+        $slider_direction_number = 1;
+        $slider_direction_number_id = 1;
+        $slide_class = 1;
+        @endphp
+        
         <div id="ensign-nivoslider-2" class="slides">
-            <img src="{{ asset('assets/img/slider/slider3.png')}}" alt="slider" width="1920" height="720" title="#slider-direction-1" />
-            <img src="{{ asset('assets/img/slider/slider2.png')}}" alt="slider" width="1920" height="720" title="#slider-direction-2" />
-            <img src="{{ asset('assets/img/slider/slider1.png')}}" alt="slider" width="1920" height="720" title="#slider-direction-3" />
+            @foreach ($sliders as $slider)
+            <img src="{{ asset('/upload/slider_images/'.$slider->slider_img)}}" alt="slider" width="1920" height="720" title="#slider-direction-{{$slider_direction_number++}}" />
+            @endforeach
         </div>
-        <div id="slider-direction-1" class="t-cn slider-direction">
-            <div class="slider-content s-tb slide-1">
+
+        @foreach ($sliders as $slider)
+        <div id="slider-direction-{{$slider_direction_number_id++}}" class="t-cn slider-direction">
+            <div class="slider-content s-tb slide-{{$slide_class++}}">
                 <div class="text-left title-container s-tb-c">
                     <div class="container">
                         <p class="item-subtitle">Find The Right Way</p>
-                        <h2 class="item-title">Business Solutions For All Enterprises</h2>
-                        <div class="item-paragraph">Bhen an unknown printer took a galley of type and scrambled ype specimen book. It has survived .</div>
+                        <h2 class="item-title">{{$slider->title}}</h2>
+                        <div class="item-paragraph">{{$slider->description}}</div>
                         <div class="slider-button">
-                            <a href="service1.html" class="slider-btn">Free Consulting<i class="fas fa-long-arrow-alt-right"></i></a>
+                            <a href="service1.html" class="slider-btn">Get Started<i class="fas fa-long-arrow-alt-right"></i></a>
                         </div>
                         <div class="social-site">
                             <ul>
@@ -37,51 +46,7 @@
                 </div>
             </div>
         </div>
-        <div id="slider-direction-2" class="t-cn slider-direction">
-            <div class="slider-content s-tb slide-2">
-                <div class="text-left title-container s-tb-c">
-                    <div class="container">
-                        <p class="item-subtitle">Find The Right Way</p>
-                        <h2 class="item-title">Business Solutions For All Enterprises</h2>
-                        <div class="item-paragraph">Bhen an unknown printer took a galley of type and scrambled ype specimen book. It has survived .</div>
-                        <div class="slider-button">
-                            <a href="service1.html" class="slider-btn">Free Consulting<i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                        <div class="social-site">
-                            <ul>
-                                <li><span>Follow Us On :</span><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="slider-direction-3" class="t-cn slider-direction">
-            <div class="slider-content s-tb slide-3">
-                <div class="text-left title-container s-tb-c">
-                    <div class="container">
-                        <p class="item-subtitle">Find The Right Way</p>
-                        <h2 class="item-title">Business Solutions For All Enterprises</h2>
-                        <div class="item-paragraph">Bhen an unknown printer took a galley of type and scrambled ype specimen book. It has survived .</div>
-                        <div class="slider-button">
-                            <a href="service1.html" class="slider-btn">Free Consulting<i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                        <div class="social-site">
-                            <ul>
-                                <li><span>Follow Us On :</span><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
+   
 </div>

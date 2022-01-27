@@ -54,8 +54,8 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="single-portfolio-box2">
-                        <p class="section-subtitle">Corporate Finance</p>
-                        <h2 class="section-title">Our Business Growth</h2>
+                        <p class="section-subtitle">{{$project->projectCategory->name}}</p>
+                        <h2 class="section-title">{{$project->title}}</h2>
                         <div class="section-subtitle2">Dorem Ipsum has been the industry's standard dummy text ever since the unknown printer took a galley of type and scrambled.</div>
                         <p>Dorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived follow not only five c Lorem Ipsum has been the industry's standard dummy text ever sincewhen anareaprinter took a galley of type and scrambled it to make.</p>
                         <h3 class="section-title2">Project Target</h3>
@@ -102,29 +102,29 @@
     <!--=====================================-->
     <!--=            Banner Start           =-->
     <!--=====================================-->
-    <section class="banner-wrap1 banner-wrap5">
+    <section class="banner-wrap1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="banner-box1">
                         <div class="item-img">
-                            <img src="img/blog/blog9.jpg" alt="blog" width="586" height="200">
+                            <img src="{{asset('assets/img/blog/blog39.jpg') }}"" alt="blog" width="586" height="195">
                         </div>
                         <div class="bannar-details">
-                            <h3 class="heading-title">Need Any Financial Help!</h3>
+                            <h3 class="heading-title">Need Any Website Help!</h3>
                             <div class="contact-box2">
                                 <div class="item-icon-box">
                                     <div class="item-icon"><i class="far fa-comments"></i></div>   
                                     <div class="banner-content">
                                         <div class="item-hotline">Hotline</div>
-                                        <div class="item-number">009850 9850</div>
+                                        <div class="item-number">{{$companyInfo->mobile}}</div>
                                     </div>
                                 </div>
                                 <div class="item-icon-box item-icon-box2">
                                     <div class="item-icon"><i class="far fa-envelope"></i></div>   
                                     <div class="banner-content">
                                         <div class="item-hotline">Send Us Email</div>
-                                        <div class="item-number">info@gmail.com</div>
+                                        <div class="item-number">{{$companyInfo->email}}</div>
                                     </div>
                                 </div>
                             </div>

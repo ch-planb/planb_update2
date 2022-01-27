@@ -27,6 +27,7 @@ class ProjectController extends Controller
             'target' => 'required',
             'link' => 'required',
             'image' => 'required|mimes:jpg,png,jpeg,gif|image',
+            'thumbnail' => 'required|mimes:jpg,png,jpeg,gif|image',
             'start_date' => 'required',
             'end_date' => 'required',
         ]);
@@ -44,11 +45,20 @@ class ProjectController extends Controller
             $file = $request->file('image');
             $extention = $file->getClientOriginalExtension();
             $filename = time() . '.' . $extention;
-            $file->move('Upload/Images/Project', $filename);
+            $file->move('upload/project', $filename);
             $path = $filename;
         }
         //Project Image End
 
+        //Project Thumbnail Start
+        if ($request->hasfile('thumbnail')) {
+            $file = $request->file('thumbnail');
+            $extention = $file->getClientOriginalExtension();
+            $filename = time() . '.' . $extention;
+            $file->move('upload/project', $filename);
+            $thumbnail_path = $filename;
+        }
+        //Project Thumbnail End
 
         $project->pro_cat_id = $request->pro_cat_id;
         $project->client_id = $request->client_id;
@@ -60,6 +70,7 @@ class ProjectController extends Controller
         $project->start_date = $request->start_date;
         $project->end_date = $request->end_date;
         $project->image = $path;
+        $project->thumbnail = $thumbnail_path;
         
         $project->save();
     }
@@ -74,6 +85,7 @@ class ProjectController extends Controller
         $projects = Project::with('projectCategory')->latest()->get();
         return response()->json($projects);
     }
+    
     public function delete($id)
     {
         $project = Project::find($id);

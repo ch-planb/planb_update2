@@ -1346,8 +1346,8 @@ h6 {
   font-weight: 600;
   background-color: #ffffff;
   padding: 16px 50px 16px 30px;
-  border: none;
-  border-radius: 50px;
+  border: 1px solid #fa2917;
+  border-radius: 10px;
   box-shadow: 0 10px 27px 0 rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease-in-out;
   position: relative;
@@ -1369,7 +1369,7 @@ h6 {
   visibility: hidden;
   opacity: 0;
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   z-index: -5;
   transition: all 0.3s ease-in-out;
 }
@@ -3205,7 +3205,7 @@ nav.template-main-menu > ul > li:hover .template-mega-menu {
   text-align: center;
 }
 .offcanvas-menu-wrap .offcanvas-content .offcanvas-menu .nav-item {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 .offcanvas-menu-wrap .offcanvas-content .offcanvas-menu .nav-item a {
   font-size: 15px;
@@ -3283,7 +3283,7 @@ div#wrapper.open > .offcanvas-mask {
   border-bottom: 1px solid #b2b2b2;
   position: relative;
   text-align: center;
-  height: 50px;
+  height: 65px;
   display: flex;
   align-items: center;
 }
@@ -3352,7 +3352,7 @@ div#wrapper.open > .offcanvas-mask {
 .mean-container a.meanmenu-reveal {
   float: none !important;
   position: absolute;
-  top: 0;
+  top: 6px;
   transition: unset;
   padding: 16px 14px 12px;
 }
@@ -5082,6 +5082,7 @@ div#wrapper.open > .offcanvas-mask {
   background-color: #000;
   padding: 60px 0px 50px 0px;
   position: relative;
+  margin-top: 100px;
 }
 @media only screen and (max-width: 1199px) {
   .banner-wrap2 {
@@ -6617,7 +6618,7 @@ div#wrapper.open > .offcanvas-mask {
 }
 @media only screen and (max-width: 767px) {
   .breadcrumb-box {
-    padding: 0px;
+    padding: 20px 0px;
   }
 }
 .breadcrumb-box .item-img {

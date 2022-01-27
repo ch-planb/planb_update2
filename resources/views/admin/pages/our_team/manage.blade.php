@@ -81,7 +81,7 @@
                         <tr>
                         <td class="text-center">${sl++}</td>
                         <td>
-                        <img src="/upload/Images/Our_Team/${data.profile_picture}" alt="Avatar" height="35" width="35" style="border-radius:50%">
+                        <img src="/upload/our_team/${data.profile_picture}" alt="Avatar" height="35" width="35" style="border-radius:50%">
                         </td>
                         <td>${data.name}</td>
                         <td>${data.designation}</td>

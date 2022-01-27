@@ -93,7 +93,7 @@
                             </div>
                             <div class="col-md-6 col-12">
                                 <div class="form-group">
-                                    <img src="{{asset('upload/logo/'.$companyInfo->logo )}}" alt="Logo" class="w-100">
+                                    <img src="{{asset('upload/logo/'.$companyInfo->logo )}}" alt="Logo" class="w-50">
                                 </div>
                             </div>
 
@@ -109,7 +109,7 @@
                             </div>
                             <div class="col-md-6 col-12">
                                 <div class="form-group">
-                                    <img src="{{asset('upload/logo/'.$companyInfo->footer_logo )}}" alt="Logo" class="w-100">
+                                    <img src="{{asset('upload/logo/'.$companyInfo->footer_logo )}}" alt="Logo" class="w-50">
                                 </div>
                             </div>
                             
