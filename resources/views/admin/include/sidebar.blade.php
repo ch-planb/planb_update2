@@ -27,6 +27,21 @@
             </ul>
         </li>
 
+        <li class="nav-item">
+            <a href="javascript:void(0)" class="d-flex align-items-center" target="_self">
+                <i data-feather="file-text"></i>
+                <span class="menu-title text-truncate">Sliders</span>
+            </a>
+            <ul class="menu-content">
+                <li>
+                    <a href="{{route('slider.view') }}" class="d-flex align-items-center" target="_self">
+                        <i data-feather="circle"></i>
+                        <span class="menu-item text-truncate">Create</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
         <!-- What We Do Sidebar Menu Start  -->
         <li class="nav-item">
             <a href="javascript:void(0)" class="d-flex align-items-center" target="_self">
@@ -73,6 +88,29 @@
         </li>
         <!-- Add Service Sidebar Menu End -->
 
+        <!-- Our Team START -->
+        <li class="nav-item  ">
+            <a href="javascript:void(0)" class="d-flex align-items-center" target="_self">
+                <i data-feather="file-text"></i>
+                <span class="menu-title text-truncate">Our Team</span>
+            </a>
+            <ul class="menu-content">
+                <li>
+                    <a href="{{ route('our-team.create') }}" class="d-flex align-items-center" target="_self">
+                        <i data-feather="circle"></i>
+                        <span class="menu-item text-truncate">Create</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('our-team.manage') }}" class="d-flex align-items-center" target="_self">
+                        <i data-feather="circle"></i>
+                        <span class="menu-item text-truncate">Manage</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- Our Team End -->
+
         <!-- Project Category START -->
         <li class="nav-item  ">
             <a href="javascript:void(0)" class="d-flex align-items-center" target="_self">
@@ -117,25 +155,12 @@
             </ul>
         </li>
 
-        <li class="nav-item">
-            <a href="javascript:void(0)" class="d-flex align-items-center" target="_self">
-                <i data-feather="file-text"></i>
-                <span class="menu-title text-truncate">Sliders</span>
-            </a>
-            <ul class="menu-content">
-                <li>
-                    <a href="{{route('slider.view') }}" class="d-flex align-items-center" target="_self">
-                        <i data-feather="circle"></i>
-                        <span class="menu-item text-truncate">Create</span>
-                    </a>
-                </li>
-            </ul>
-        </li>
+        
 
         <li class="nav-item">
             <a href="javascript:void(0)" class="d-flex align-items-center" target="_self">
                 <i data-feather="file-text"></i>
-                <span class="menu-title text-truncate">testimonials</span>
+                <span class="menu-title text-truncate">Testimonials</span>
             </a>
             <ul class="menu-content">
                 <li>
@@ -147,12 +172,34 @@
             </ul>
         </li>
 
-
-        <li class="nav-item  ">
-            <a href="{{ route('contacts.list') }}" class="d-flex align-items-center" target="_self" id="contactList">
-                <i data-feather="home"></i>
+        <li class="nav-item">
+            <a href="javascript:void(0)" class="d-flex align-items-center" target="_self">
+                <i data-feather="file-text"></i>
                 <span class="menu-title text-truncate">Contacts</span>
             </a>
+            <ul class="menu-content">
+                <li>
+                    <a href="{{ route('contacts.list') }}" class="d-flex align-items-center" target="_self" id="contactList">
+                        <i data-feather="home"></i>
+                        <span class="menu-title text-truncate">Manage</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a href="javascript:void(0)" class="d-flex align-items-center" target="_self">
+                <i data-feather="file-text"></i>
+                <span class="menu-title text-truncate">Company Info</span>
+            </a>
+            <ul class="menu-content">
+                <li>
+                    <a href="{{ route('company.info') }}" class="d-flex align-items-center" target="_self" id="contactList">
+                        <i data-feather="home"></i>
+                        <span class="menu-title text-truncate">Update Info</span>
+                    </a>
+                </li>
+            </ul>
         </li>
     </ul>
 </div>

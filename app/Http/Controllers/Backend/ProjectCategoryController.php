@@ -51,6 +51,25 @@ class ProjectCategoryController extends Controller
         $project_category->delete();
         return redirect()->back();
     }
+
+    public function changeStatus(Request $request, $id)
+    {
+        $statusChange = ProjectCategory::find($id);
+
+        if ($statusChange->status == 'Published') {
+
+            $statusChange->status = 'Draft';
+            $statusChange->save();
+
+            return response()->json($statusChange);
+        }else{
+
+            $statusChange->status = 'Published';
+            $statusChange->save();
+
+            return response()->json($statusChange);
+        }
+    }
  
     
 }

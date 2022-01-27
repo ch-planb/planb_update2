@@ -26,7 +26,8 @@ class ProjectController extends Controller
             'details' => 'required',
             'target' => 'required',
             'link' => 'required',
-            'image' => 'required|mimes:jpg.png,jpeg,gif|image',
+            'image' => 'required|mimes:jpg,png,jpeg,gif|image',
+            'thumbnail' => 'required|mimes:jpg,png,jpeg,gif|image',
             'start_date' => 'required',
             'end_date' => 'required',
         ]);
@@ -40,15 +41,24 @@ class ProjectController extends Controller
         $project = new Project();
 
         //Project Image Start
-        if ($path = $request->hasfile('image')) {
+        if ($request->hasfile('image')) {
             $file = $request->file('image');
             $extention = $file->getClientOriginalExtension();
             $filename = time() . '.' . $extention;
-            $file->move('Upload/Images/Project', $filename);
+            $file->move('upload/project', $filename);
             $path = $filename;
         }
         //Project Image End
 
+        //Project Thumbnail Start
+        if ($request->hasfile('thumbnail')) {
+            $file = $request->file('thumbnail');
+            $extention = $file->getClientOriginalExtension();
+            $filename = time() . '.' . $extention;
+            $file->move('upload/project', $filename);
+            $thumbnail_path = $filename;
+        }
+        //Project Thumbnail End
 
         $project->pro_cat_id = $request->pro_cat_id;
         $project->client_id = $request->client_id;
@@ -60,6 +70,7 @@ class ProjectController extends Controller
         $project->start_date = $request->start_date;
         $project->end_date = $request->end_date;
         $project->image = $path;
+        $project->thumbnail = $thumbnail_path;
         
         $project->save();
     }
@@ -71,9 +82,10 @@ class ProjectController extends Controller
 
     public function getProjectsData()
     {
-        $projects = Project::latest()->get();
+        $projects = Project::with('projectCategory')->latest()->get();
         return response()->json($projects);
     }
+    
     public function delete($id)
     {
         $project = Project::find($id);
@@ -81,4 +93,26 @@ class ProjectController extends Controller
         $project->delete();
         return redirect()->back();
     }
+
+    public function changeStatus(Request $request, $id)
+    {
+        $statusChange = Project::find($id);
+
+        if ($statusChange->status == 'Published') {
+
+            $statusChange->status = 'Draft';
+            $statusChange->save();
+
+            return response()->json($statusChange);
+        }else{
+
+            $statusChange->status = 'Published';
+            $statusChange->save();
+
+            return response()->json($statusChange);
+        }
+    }
+
+    
+    
 }
