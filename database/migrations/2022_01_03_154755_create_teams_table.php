@@ -15,6 +15,16 @@ class CreateTeamsTable extends Migration
     {
         Schema::create('teams', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('designation');
+            $table->string('fb_link');
+            $table->string('twitter_link');
+            $table->string('linkedin_link');
+            $table->string('insta_link')->nullable();
+            $table->string('skype_link')->nullable();
+            $table->string('profile_picture');
+            $table->date('join_date');
+            $table->enum('status', ['Active', 'Inactive'])->default('Active');
             $table->timestamps();
         });
     }

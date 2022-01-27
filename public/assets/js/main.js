@@ -171,11 +171,11 @@ Section background image
                 menu.addClass('rt-sticky');
                 showDiv.removeClass('divRemove');
                
-                removeCol.removeClass('col-xl-8');
-                removeCol.removeClass('col-lg-9');
+                removeCol.removeClass('col-xl-10');
+                removeCol.removeClass('col-lg-10');
 
-                removeCol.addClass('col-xl-6');
-                removeCol.addClass('col-lg-7');
+                removeCol.addClass('col-xl-8');
+                removeCol.addClass('col-lg-8');
 
                 logoDiv.fadeIn(500).removeClass('hideLogo');
                 
@@ -184,11 +184,11 @@ Section background image
                 menu.removeClass('rt-sticky');
                 showDiv.addClass('divRemove');
 
-                removeCol.removeClass('col-xl-6');
-                removeCol.removeClass('col-lg-7');
+                removeCol.removeClass('col-xl-8');
+                removeCol.removeClass('col-lg-8');
 
-                removeCol.addClass('col-xl-8');
-                removeCol.addClass('col-lg-9');
+                removeCol.addClass('col-xl-10');
+                removeCol.addClass('col-lg-10');
                 
                 
                 stickyPlaceHolder.height(0);
@@ -268,7 +268,7 @@ Section background image
     --------------------------------------*/
     if ($.fn.meanmenu) {
         $('nav#dropdown').meanmenu({
-            siteLogo: "<div class='mobile-menu-nav-back'><a class='logo-mobile' href='index.html'><img src='img//logo/logo4.png' alt='logo' class='img-fluid'/></a></div>"
+            siteLogo: "<div class='mobile-menu-nav-back'><a class='logo-mobile' href='index.html'><img src='http://127.0.0.1:8000/upload/logo/1642783019.png' alt='logo' class='img-fluid'/></a></div>"
         });
     }
     /*-------------------------------------

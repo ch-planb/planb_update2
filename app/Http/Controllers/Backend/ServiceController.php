@@ -16,9 +16,6 @@ class ServiceController extends Controller
         return view('admin.pages.services.show-service', compact('services'));
     }
   
-  
-  
-  
     //============================== add data page=======================
     public function add()
     {

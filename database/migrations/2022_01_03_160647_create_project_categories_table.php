@@ -15,7 +15,8 @@ class CreateProjectCategoriesTable extends Migration
     {
         Schema::create('project_categories', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->nullable();
+            $table->string('name');
+            $table->enum('status', ['Published', 'Draft'])->default('Published');
             $table->timestamps();
         });
     }
