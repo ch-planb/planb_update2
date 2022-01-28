@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>FINBUZZ|Home1</title>
+    <title>Plan-B | Home</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon Start Here -->
@@ -90,13 +90,16 @@
                         <a href="{{route('projects')}}">Projects</a>
                     </li>
                     <li class="nav-item">
+                        <a href="{{route('pricing')}}">Price</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="blog1.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a href="team1.html">Our Team</a>
+                        <a href="{{route('our_team')}}">Our Team</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html">Contact</a>
+                        <a href="{{route('contact')}}">Contact</a>
                     </li>
                 </ul>
                 <div class="offcanvas-footer">
