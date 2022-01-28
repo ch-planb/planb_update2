@@ -18,7 +18,7 @@
                         <h1 class="page-title">Our Compnay Projects</h1>
                         <nav>
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Projects</li>
                             </ol>
                         </nav>
@@ -41,7 +41,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="portfolio-box1">
                         <div class="item-img">
-                            <a href="#"><img src="{{asset('upload/Images/Project/'.$project->image) }}" alt="blog" width="570" height="650"></a>
+                            <a href="#"><img src="{{asset('upload/project/'.$project->image) }}" alt="blog" width="570" height="650"></a>
                             <div class="item-content">
                                 <div class="item-number">{{$sl++}}</div>
                                 <p class="heading-subtitle">{{$project->projectCategory->name}}</p>

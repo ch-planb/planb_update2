@@ -24,7 +24,7 @@
                     <div class="topbar-left topbar-left2">
                         <p class="item-paragraph item-paragraph2">Are you ready to grow up your business?</p>
                         <div class="header-button header-button2">
-                            <a href="#">Join our team <i class="fas fa-long-arrow-alt-right"></i></a>
+                            <a href="{{route('contact')}}">Contact With Us <i class="fas fa-long-arrow-alt-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-xl-10 col-lg-10 d-flex addCol">
+                <div class="col-xl-11 col-lg-11 d-flex addCol">
                     <nav id="dropdown" class="template-main-menu">
                         <ul>
                             <li>
@@ -80,21 +80,21 @@
                                 <a href="{{route('projects')}}">Projects</a>
                             </li>
                             <li>
-                                <a href="#">Price</a>
+                                <a href="{{route('pricing')}}">Price</a>
                             </li>
                             <li>
                                 <a href="#">Blog</a>
                             </li>
                             <li>
-                                <a href="about.html">Our Team</a>
+                                <a href="{{route('our_team')}}">Our Team</a>
                             </li>
                             <li>
-                                <a href="contact.html">Contact</a>
+                                <a href="{{route('contact')}}">Contact</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-xl-2 col-lg-2 d-flex justify-content-end">
+                <div class="col-xl-1 col-lg-1 d-flex justify-content-end">
                     <div class="header-action-layout1">
                         <ul>
                             <li class="search-btn">

@@ -225,7 +225,7 @@
                     <div class="team-box1">
                         <div class="item-shape"></div>
                         <div class="item-img">
-                            <a href="#"><img src="{{asset('upload/Images/Our_Team/'.$member->profile_picture) }}" alt="team" width="510" height="500"></a>
+                            <a href="#"><img src="{{asset('upload/our_team/'.$member->profile_picture) }}" alt="team" width="510" height="500"></a>
                             <ul class="team-social">
                                 <li><a href="{{$member->fb_link }}"><i class="fab fa-facebook-square"></i></a></li>
                                 <li><a href="{{$member->twitter_link }}"><i class="fab fa-twitter"></i></a></li>
@@ -241,44 +241,6 @@
                     </div>
                 </div>
             @endforeach
-            {{-- <div class="col-lg-4 col-md-6">
-                <div class="team-box1">
-                    <div class="item-shape"></div>
-                    <div class="item-img">
-                        <a href="#"><img src="{{asset('assets/img/team/team2.jpg') }}"" alt="team" width="510" height="500"></a>
-                        <ul class="team-social">
-                            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="item-content">
-                        <h3 class="item-title"><a href="team1.html">Robert Gerry</a></h3>
-                        <h4 class="item-subtitle">Ceo & Founder</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="team-box1">
-                    <div class="item-shape"></div>
-                    <div class="item-img">
-                        <a href="#"><img src="{{asset('assets/img/team/team3.jpg') }}"" alt="team" width="510" height="500"></a>
-                        <ul class="team-social">
-                            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="item-content">
-                        <h3 class="item-title"><a href="team1.html">Robert Gerry</a></h3>
-                        <h4 class="item-subtitle">Ceo & Founder</h4>
-                    </div>
-                </div>
-            </div> --}}
         </div>
     </div>
 </section>
@@ -347,7 +309,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="portfolio-box1">
                         <div class="item-img">
-                            <a href="#"><img src="{{asset('upload/Images/Project/'.$project->image) }}" alt="blog" width="570" height="650"></a>
+                            <a href="#"><img src="{{asset('upload/project/'.$project->image) }}" alt="blog" width="570" height="650"></a>
                             <div class="item-content">
                                 <div class="item-number">0{{$sl++}}</div>
                                 <p class="heading-subtitle">{{$project->projectCategory->name}}</p>
@@ -393,6 +355,164 @@
 </section>
 
 <!--=====================================-->
+<!--=            Pricing Start          =-->
+<!--=====================================-->
+<section class="pricing-table-wrap"style="background-image: url({{asset('assets/img/team/team4.jpg')}});">
+    <div class="container">
+        <div class="section-heading">
+            <h2 class="section-title text-white">Pricing & Plane</h2>
+            <h3 class="section-subtitle text-white"><span>Save Over</span> <span class="colorful-bg">25%</span>  When You Select Annual Billing</h3>
+        </div>
+        <div class="tab-area2">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#monthly" role="tab" aria-selected="true">Monthly</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#annualy" role="tab" aria-selected="false">Annualy</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="monthly" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing-table-box">
+                                <div class="background-imagae">
+                                    <img src="{{asset('assets/img/figure/figure93.png')}}" alt="figure">
+                                </div>
+                                <h3 class="heading-title">Starter Plan</h3>
+                                <p>Financa dummy text of the printing and typesetting industry. </p>
+                                <div class="item-price">
+                                    <div class="item-number"><span class="item-dollar">$</span>19<span class="item-currency">.00</span><span class="item-duration">Per Month</span></div>
+                                </div>
+                                <ul class="pricing-list">
+                                    <li><i class="fas fa-circle"></i>Finance Consulting</li>
+                                    <li><i class="fas fa-circle"></i>Business Economiext printing </li>
+                                    <li><i class="fas fa-circle"></i>Investment  typesetting </li>
+                                    <li><i class="fas fa-circle"></i>industr um has been</li>
+                                </ul>
+                                <div class="pricing-button">
+                                    <a href="#" class="pricing-btn">Buy This Plan</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing-table-box">
+                                <div class="background-imagae">
+                                    <img src="{{asset('assets/img/figure/figure93.png')}}" alt="figure">
+                                </div>
+                                <h3 class="heading-title">Agency Plan</h3>
+                                <p>Financa dummy text of the printing and typesetting industry. </p>
+                                <div class="item-price">
+                                    <div class="item-number"><span class="item-dollar">$</span>49<span class="item-currency">.00</span><span class="item-duration">Per Month</span></div>
+                                </div>
+                                <ul class="pricing-list">
+                                    <li><i class="fas fa-circle"></i>Finance Consulting</li>
+                                    <li><i class="fas fa-circle"></i>Business Economiext printing </li>
+                                    <li><i class="fas fa-circle"></i>Investment  typesetting </li>
+                                    <li><i class="fas fa-circle"></i>industr um has been</li>
+                                </ul>
+                                <div class="pricing-button">
+                                    <a href="#" class="pricing-btn">Buy This Plan</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing-table-box">
+                                <div class="background-imagae">
+                                    <img src="{{asset('assets/img/figure/figure93.png')}}" alt="figure">
+                                </div>
+                                <h3 class="heading-title">Enterprice Plan</h3>
+                                <p>Financa dummy text of the printing and typesetting industry. </p>
+                                <div class="item-price">
+                                    <div class="item-number"><span class="item-dollar item-dollar2">$</span>199<span class="item-currency item-currency2">.00</span><span class="item-duration">Per Month</span></div>
+                                </div>
+                                <ul class="pricing-list">
+                                    <li><i class="fas fa-circle"></i>Finance Consulting</li>
+                                    <li><i class="fas fa-circle"></i>Business Economiext printing </li>
+                                    <li><i class="fas fa-circle"></i>Investment  typesetting </li>
+                                    <li><i class="fas fa-circle"></i>industr um has been</li>
+                                </ul>
+                                <div class="pricing-button">
+                                    <a href="#" class="pricing-btn">Buy This Plan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="annualy" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing-table-box">
+                                <div class="background-imagae">
+                                    <img src="{{asset('assets/img/figure/figure93.png')}}" alt="figure">
+                                </div>
+                                <h3 class="heading-title">Starter Plan</h3>
+                                <p>Financa dummy text of the printing and typesetting industry. </p>
+                                <div class="item-price">
+                                    <div class="item-number"><span class="item-dollar">$</span>19<span class="item-currency">.00</span><span class="item-duration">Per Month</span></div>
+                                </div>
+                                <ul class="pricing-list">
+                                    <li><i class="fas fa-circle"></i>Finance Consulting</li>
+                                    <li><i class="fas fa-circle"></i>Business Economiext printing </li>
+                                    <li><i class="fas fa-circle"></i>Investment  typesetting </li>
+                                    <li><i class="fas fa-circle"></i>industr um has been</li>
+                                </ul>
+                                <div class="pricing-button">
+                                    <a href="#" class="pricing-btn">Buy This Plan</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing-table-box">
+                                <div class="background-imagae">
+                                    <img src="{{asset('assets/img/figure/figure93.png')}}" alt="figure">
+                                </div>
+                                <h3 class="heading-title">Agency Plan</h3>
+                                <p>Financa dummy text of the printing and typesetting industry. </p>
+                                <div class="item-price">
+                                    <div class="item-number"><span class="item-dollar">$</span>49<span class="item-currency">.00</span><span class="item-duration">Per Month</span></div>
+                                </div>
+                                <ul class="pricing-list">
+                                    <li><i class="fas fa-circle"></i>Finance Consulting</li>
+                                    <li><i class="fas fa-circle"></i>Business Economiext printing </li>
+                                    <li><i class="fas fa-circle"></i>Investment  typesetting </li>
+                                    <li><i class="fas fa-circle"></i>industr um has been</li>
+                                </ul>
+                                <div class="pricing-button">
+                                    <a href="#" class="pricing-btn">Buy This Plan</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing-table-box">
+                                <div class="background-imagae">
+                                    <img src="{{asset('assets/img/figure/figure93.png')}}" alt="figure">
+                                </div>
+                                <h3 class="heading-title">Enterprice Plan</h3>
+                                <p>Financa dummy text of the printing and typesetting industry. </p>
+                                <div class="item-price">
+                                    <div class="item-number"><span class="item-dollar item-dollar2">$</span>199<span class="item-currency item-currency2">.00</span><span class="item-duration">Per Month</span></div>
+                                </div>
+                                <ul class="pricing-list">
+                                    <li><i class="fas fa-circle"></i>Finance Consulting</li>
+                                    <li><i class="fas fa-circle"></i>Business Economiext printing </li>
+                                    <li><i class="fas fa-circle"></i>Investment  typesetting </li>
+                                    <li><i class="fas fa-circle"></i>industr um has been</li>
+                                </ul>
+                                <div class="pricing-button">
+                                    <a href="#" class="pricing-btn">Buy This Plan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=====================================-->
 <!--=            Call-back Start        =-->
 <!--=====================================-->
 <section class="call-back-wrap">
@@ -429,7 +549,7 @@
             <div class="col-lg-7 col-md-12">
                 <div class="call-back-box2">
                     <div class="item-img">
-                        <img src="{{asset('assets/img/blog/blog4.jpg') }}"" alt="blog" width="690" height="582">
+                        <img src="{{asset('assets/img/blog/blog4.jpg') }}" alt="blog" width="690" height="582">
                         <div class="call-img">
                             <img src="{{asset('assets/img/figure/figure11.png') }}" alt="figure" width="145" height="295">
                         </div>
@@ -553,43 +673,6 @@
         </div>
     </div>
 </section>
-
-<!--=====================================-->
-<!--=          Personal Start           =-->
-<!--=====================================-->
-{{-- <section class="personal-info-wrap1">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-xl-4 col-lg-8">
-                <div class="personal-details">
-                    <div class="row">
-                        <div class="col-xl-6 col-md-6 col-sm-6">
-                            <div class="personal-info-box">
-                                <h2 class="section-title">New York City</h2>
-                                <ul class="information-list">
-                                    <li>120 F 2th Yt, New York NY 1259</li>
-                                    <li>+1 (212) 333-7888</li>
-                                    <li>email@example.com</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-8 col-lg-4 d-xl-block d-none">
-                <div class="location-img">
-                    <div id="googleMap" class="google-map"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="figure-img1">
-        <img src="{{asset('assets/img/figure/figure5.png') }}" alt="figure" width="872" height="724">
-    </div>
-    <div class="figure-img2">
-        <img src="{{asset('assets/img/figure/figure6.png') }}" alt="figure" width="487" height="269">
-    </div>
-</section> --}}
 
 
 @endsection
