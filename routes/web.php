@@ -13,6 +13,7 @@ use App\Http\Controllers\Backend\ServiceController;
 use App\Http\Controllers\Backend\TestimonialController;
 use App\Http\Controllers\Backend\WhatWeDoController;
 use App\Http\Controllers\Backend\ContactController;
+use App\Http\Controllers\Backend\AboutUsController;
 use App\Http\Controllers\Frontend\IndexController;
 use Laravel\Jetstream\Rules\Role;
 
@@ -150,7 +151,15 @@ Route::group(['prefix'=> 'admin', 'middleware'=>['admin']], function(){
 // ============service all routes end by arko==================
 
 
+//------start aboutus--------------//
+Route::prefix('aboutUs')->group(function(){
+    Route::get('/index', [AboutUsController::class, 'index'])->name('aboutUs.index');
+    Route::post('/store', [AboutUsController::class, 'store'])->name('aboutUs.store');
+    Route::get('/list', [AboutUsController::class, 'view'])->name('aboutUs.list');
+    Route::get('/delete/{id}', [AboutUsController::class, 'delete'])->name('aboutUs.delete');
+});
 
+//------aboutus ends --------------//
 
 // ============slider all routes end by ornob==================
 

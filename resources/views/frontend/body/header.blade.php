@@ -16,7 +16,9 @@
                 <div class="col-xl-2 col-lg-2">
                     <div class="logo-area2">
                         <a href="index.html" class="temp-logo">
-                            <img src="{{asset('upload/logo/' .$companyInfo->logo)}}" alt="logo" class="img-fluid" width="180" height="45">
+                            @isset($companyInfo->logo)
+                                <img src="{{asset('upload/logo/' .$companyInfo->logo)}}" alt="logo" class="img-fluid" width="180" height="45">
+                             @endisset     
                         </a>
                     </div>
                 </div>
@@ -38,7 +40,7 @@
                                     </div>
                                     <div class="media-body">
                                         <div class="item-label">Hotline Number</div>
-                                        <div class="item-number">{{$companyInfo->mobile}}</div>
+                                        <div class="item-number">{{isset($companyInfo->mobile)}}</div>
                                     </div>
                                 </div>
                             </li>
@@ -60,7 +62,9 @@
                 <div class="col-xl-2 col-lg-2 divRemove showDiv">
                     <div class="logo-area">
                         <a href="{{url('/')}}" class="temp-logo">
-                            <img src="{{asset('upload/logo/' .$companyInfo->logo)}}" width="180" height="45" alt="logo" class="img-fluid">
+                            @isset($companyInfo->logo)
+                            <img src="{{asset('upload/logo/' .$companyInfo->logo)}}" alt="logo" class="img-fluid" width="180" height="45">
+                            @endisset 
                         </a>
                     </div>
                 </div>

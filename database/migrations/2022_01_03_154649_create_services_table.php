@@ -18,6 +18,7 @@ class CreateServicesTable extends Migration
             $table->string('title')->nullable();
             $table->longText('description')->nullable();
             $table->string('icon')->nullable();
+            $table->tinyInteger('special_service')->default(0);
             $table->timestamps();
         });
     }

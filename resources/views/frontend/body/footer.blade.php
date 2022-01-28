@@ -4,17 +4,19 @@
             <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6">
                 <div class="footer-left">
                     <div class="footer-logo">
+                        @isset($companyInfo->footer_logo)
                         <a href="{{url('/')}}"><img src="{{asset('upload/logo/'.$companyInfo->footer_logo )}}" alt="logo" width="180" height="45"></a>
+                     @endisset 
                     </div>
-                    <p>{{$companyInfo->short_description}}</p>
+                    <p>{{isset($companyInfo->short_description)}}</p>
                     <div class="footer-social">
                         <ul>
                             <li>
-                                <a href="{{$companyInfo->fb_link}}" class="fb"><i class="fab fa-facebook-square"></i></a>
-                                <a href="{{$companyInfo->twitter_link}}" class="twit"><i class="fab fa-twitter"></i></a>
-                                <a href="{{$companyInfo->linkedin_link}}" class="linkin"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="{{$companyInfo->insta_link}}" class="pint"><i class="fab fa-instagram"></i></a>
-                                <a href="{{$companyInfo->skype_link}}" class="skype"><i class="fab fa-skype"></i></a>
+                                <a href="{{isset($companyInfo->fb_link)}}" class="fb"><i class="fab fa-facebook-square"></i></a>
+                                <a href="{{isset($companyInfo->twitter_link)}}" class="twit"><i class="fab fa-twitter"></i></a>
+                                <a href="{{isset($companyInfo->linkedin_link)}}" class="linkin"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="{{isset($companyInfo->insta_link)}}" class="pint"><i class="fab fa-instagram"></i></a>
+                                <a href="{{isset($companyInfo->skype_link)}}" class="skype"><i class="fab fa-skype"></i></a>
                             </li>
                         </ul>
                     </div>

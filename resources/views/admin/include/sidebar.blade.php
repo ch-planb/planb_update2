@@ -172,6 +172,29 @@
             </ul>
         </li>
 
+
+        <li class="nav-item">
+            <a href="javascript:void(0)" class="d-flex align-items-center" target="_self">
+                <i data-feather="file-text"></i>
+                <span class="menu-title text-truncate">about us</span>
+            </a>
+            <ul class="menu-content">
+                <li>
+                    <a href="{{route('aboutUs.index') }}" class="d-flex align-items-center" target="_self">
+                        <i data-feather="circle"></i>
+                        <span class="menu-item text-truncate">create</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{route('aboutUs.list') }}" class="d-flex align-items-center" target="_self">
+                        <i data-feather="circle"></i>
+                        <span class="menu-item text-truncate">Manage</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
         <li class="nav-item">
             <a href="javascript:void(0)" class="d-flex align-items-center" target="_self">
                 <i data-feather="file-text"></i>

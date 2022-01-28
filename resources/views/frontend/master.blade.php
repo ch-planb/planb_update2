@@ -74,7 +74,10 @@
             <div class="close-btn offcanvas-close"><i class="fas fa-times"></i></div>
             <div class="offcanvas-content">
                 <div class="offcanvas-logo">
+                    @isset($companyInfo->logo)
                     <a href="{{url('/')}}"><img src="{{asset('upload/logo/' .$companyInfo->logo)}}" alt="Logo" width="180" height="45"></a>
+                        
+                    @endisset
                 </div>
                 <ul class="offcanvas-menu">
                     <li class="nav-item">
@@ -102,11 +105,11 @@
                 <div class="offcanvas-footer">
                     <div class="item-title">Follow Me</div>
                     <ul class="offcanvas-social">
-                        <li><a href="{{$companyInfo->fb_link}}"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="{{$companyInfo->twitter_link}}"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="{{$companyInfo->linkedin_link}}"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="{{$companyInfo->insta_link}}"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="{{$companyInfo->skype_link}}"><i class="fab fa-skype"></i></a></li>
+                        <li><a href="{{isset($companyInfo->fb_link)}}"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="{{isset($companyInfo->twitter_link)}}"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="{{isset($companyInfo->linkedin_link)}}"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="{{isset($companyInfo->insta_link)}}"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="{{isset($companyInfo->skype_link)}}"><i class="fab fa-skype"></i></a></li>
                     </ul>
                 </div>
             </div>

@@ -301,14 +301,14 @@
                                 <div class="item-icon"><i class="far fa-comments"></i></div>   
                                 <div class="banner-content">
                                     <div class="item-hotline">Hotline</div>
-                                    <div class="item-number">{{$companyInfo->mobile}}</div>
+                                    <div class="item-number">{{isset($companyInfo->mobile)}}</div>
                                 </div>
                             </div>
                             <div class="item-icon-box item-icon-box2">
                                 <div class="item-icon"><i class="far fa-envelope"></i></div>   
                                 <div class="banner-content">
                                     <div class="item-hotline">Send Us Email</div>
-                                    <div class="item-number">{{$companyInfo->email}}</div>
+                                    <div class="item-number">{{isset($companyInfo->email)}}</div>
                                 </div>
                             </div>
                         </div>

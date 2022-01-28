@@ -29,6 +29,7 @@ class ServiceController extends Controller
     //============================== page data store===========
     public function store(Request $request)
     {
+        // dd($request);
         $validatedata = $request->validate([
               'title'=>'required',
               'description'=>'required',
@@ -42,12 +43,25 @@ class ServiceController extends Controller
         Image::make($image)->resize(870, 370)->save('upload/service_icon/'.$name_gen);
         $save_url = 'upload/service_icon/'.$name_gen;
 
+        // check if this is special service
+        $service=$request->special_service;
+        if($service=='on'){
 
-        $services = Service::create([
-             'title'=> $request->title,
-             'description'=> $request->description,
-             'icon'=> $save_url,
-           ]);
+            $services = Service::create([
+                'title'=> $request->title,
+                'description'=> $request->description,
+                'icon'=> $save_url,
+                'special_service'=>1,
+              ]);
+        }
+        else{
+            $services = Service::create([
+                'title'=> $request->title,
+                'description'=> $request->description,
+                'icon'=> $save_url,
+              ]);
+        }
+       
         $services->save();
         $notification = array(
               'message' =>  'Add Successfully',
@@ -67,6 +81,7 @@ class ServiceController extends Controller
     //================= page data update===============
     public function update(Request $request, $id)
     {
+        
         $validatedata = $request->validate([
               'title'=>'required',
               'description'=>'required',
@@ -76,6 +91,7 @@ class ServiceController extends Controller
 
         $updateData=Service::findorfail($id);
         $old_img = $updateData->icon;
+        // dd($old_img);
         if ($request->file('icon')) {
             unlink($old_img);
             $image = $request->file('icon');
@@ -83,13 +99,30 @@ class ServiceController extends Controller
             Image::make($image)->resize(870, 370)->save('upload/service_icon/'.$name_gen);
             $save_url = 'upload/service_icon/'.$name_gen;
 
+             // check if this is special service
+            $service=$request->special_service;
+             if($service=='on'){
 
             $updateData->update([
             
-          'title'=> $request->title,
-          'description'=> $request->description,
-          'icon'=> $save_url,
-          ]);
+                'title'=> $request->title,
+                'description'=> $request->description,
+                'icon'=> $save_url,
+                'special_service'=>1,
+                ]);
+        }
+        else{
+
+            $updateData->update([
+                'title'=> $request->title,
+                'description'=> $request->description,
+                'icon'=> $save_url,
+                'special_service'=>0,
+                ]);
+        }
+
+
+          
             $notification = array(
           'message' =>  'Update Successfully',
           'alert-type' => 'success'
