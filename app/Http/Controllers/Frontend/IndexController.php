@@ -38,4 +38,20 @@ class IndexController extends Controller
         $project = Project::with('projectCategory')->findOrFail($id);
         return view('frontend.pages.projects.project-details', compact('project', 'companyInfo'));
     }
+    public function pricing()
+    {
+        $companyInfo = CompanyInfo::latest()->first();
+        return view('frontend.pages.price.price', compact('companyInfo'));
+    }
+    public function contact()
+    {
+        $companyInfo = CompanyInfo::latest()->first();
+        return view('frontend.pages.contact.contact', compact('companyInfo'));
+    }
+    public function our_team()
+    {
+        $companyInfo = CompanyInfo::latest()->first();
+        $members = Team::all();
+        return view('frontend.pages.our_team.our_team', compact('companyInfo', 'members'));
+    }
 }

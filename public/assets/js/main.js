@@ -171,24 +171,23 @@ Section background image
                 menu.addClass('rt-sticky');
                 showDiv.removeClass('divRemove');
                
-                removeCol.removeClass('col-xl-10');
-                removeCol.removeClass('col-lg-10');
+                removeCol.removeClass('col-xl-11');
+                removeCol.removeClass('col-lg-11');
 
-                removeCol.addClass('col-xl-8');
-                removeCol.addClass('col-lg-8');
+                removeCol.addClass('col-xl-9');
+                removeCol.addClass('col-lg-9');
 
-                logoDiv.fadeIn(500).removeClass('hideLogo');
                 
                 stickyPlaceHolder.height(menuH);
             } else {
                 menu.removeClass('rt-sticky');
                 showDiv.addClass('divRemove');
 
-                removeCol.removeClass('col-xl-8');
-                removeCol.removeClass('col-lg-8');
+                removeCol.removeClass('col-xl-9');
+                removeCol.removeClass('col-lg-9');
 
-                removeCol.addClass('col-xl-10');
-                removeCol.addClass('col-lg-10');
+                removeCol.addClass('col-xl-11');
+                removeCol.addClass('col-lg-11');
                 
                 
                 stickyPlaceHolder.height(0);

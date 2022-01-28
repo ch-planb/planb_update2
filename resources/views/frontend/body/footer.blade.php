@@ -63,7 +63,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="copyright-area">
-                        <p> © Plan-B Ltd, 2022. All Rights Reserved </p>
+                        <p> © {{$companyInfo->name}}, 2020 - @php echo date("Y") @endphp All Rights Reserved </p>
                         <div class="copyright-img1">
                             <img src="{{asset('assets/img/figure/figure4.png')}}" alt="figure" width="20" height="20">
                         </div>

@@ -25,6 +25,9 @@ use Laravel\Jetstream\Rules\Role;
 Route::get('/', [IndexController::class, 'index'])->name('home');
 Route::get('/projects', [IndexController::class, 'projects'])->name('projects');
 Route::get('/project/details/{id}', [IndexController::class, 'project_single_page'])->name('project-details');
+Route::get('/pricing-&-plan', [IndexController::class, 'pricing'])->name('pricing');
+Route::get('/our-team', [IndexController::class, 'our_team'])->name('our_team');
+Route::get('/contact', [IndexController::class, 'contact'])->name('contact');
 
 
 

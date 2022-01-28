@@ -3136,8 +3136,7 @@ nav.template-main-menu > ul > li:hover .template-mega-menu {
   font-size: 16px;
   font-weight: 500;
   padding: 13px 25px 10px 25px;
-  border: none;
-  border-radius: 30px;
+  border-radius: 10px;
   position: relative;
   z-index: 5;
   transition: all 0.3s ease-in-out;
@@ -6713,7 +6712,42 @@ div#wrapper.open > .offcanvas-mask {
   transform: translateY(120px);
   position: relative;
   z-index: 3;
+  padding-top: 30px;
 }
+.pricing-table-wrap::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 75%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  z-index: -5;
+}
+.pricing-table-wrap-single{
+  padding: 80px 0px 20px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+}
+.pricing-table-wrap-single .section-heading{
+  text-align: center;
+}
+.pricing-table-wrap-single::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  z-index: -5;
+}
+
 @media only screen and (max-width: 1439px) {
   .call-back-wrap {
     transform: translateY(55px);
@@ -8370,7 +8404,7 @@ div#wrapper.open > .offcanvas-mask {
 }
 /*------------------- 5.11 Contact -------------------*/
 .contact-wrap1 {
-  padding: 160px 0px 0px 0px;
+  padding: 110px 0px 0px 0px;
 }
 @media only screen and (max-width: 1199px) {
   .contact-wrap1 {
@@ -8436,7 +8470,7 @@ div#wrapper.open > .offcanvas-mask {
   transform: rotate(-135deg);
 }
 .contact-wrap2 {
-  padding: 35px 0px 85px 0px;
+  padding: 35px 0px 0px 0px;
 }
 @media only screen and (max-width: 1199px) {
   .contact-wrap2 {
@@ -8516,8 +8550,8 @@ div#wrapper.open > .offcanvas-mask {
   color: #fff;
   background: #fa360a;
   padding: 13px 40px;
-  border: none;
-  border-radius: 50px;
+  border: 1px solid #fa2917;
+  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 @media only screen and (max-width: 320px) {
@@ -10058,7 +10092,12 @@ div#wrapper.open > .offcanvas-mask {
 }
 /*------------------- 5.19 Pricing -------------------*/
 .pricing-table-wrap {
-  padding: 120px 0px 140px 0px;
+  padding: 80px 0px 85px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
 }
 @media only screen and (max-width: 1199px) {
   .pricing-table-wrap {
@@ -10096,6 +10135,41 @@ div#wrapper.open > .offcanvas-mask {
 .pricing-table-wrap .section-heading .section-subtitle .colorful-bg {
   color: #fa360a;
 }
+
+
+.pricing-table-wrap-single .section-heading {
+  text-align: center;
+}
+.pricing-table-wrap-single .section-heading .section-title {
+  color: #000;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 28px;
+}
+@media only screen and (max-width: 1199px) {
+  .pricing-table-wrap-single .section-heading .section-title {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .pricing-table-wrap-single .section-heading .section-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+.pricing-table-wrap-single .section-heading .section-subtitle {
+  color: #444444;
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+.pricing-table-wrap-single .section-heading .section-subtitle span {
+  font-weight: 700;
+}
+.pricing-table-wrap-single .section-heading .section-subtitle .colorful-bg {
+  color: #fa360a;
+}
+
+
 .tab-area2 .nav-tabs {
   border: none;
   justify-content: center;
@@ -10131,6 +10205,7 @@ div#wrapper.open > .offcanvas-mask {
   padding: 32px 50px 58px 50px;
   border: 1px solid #e5e5e5;
   border-radius: 30px;
+  box-shadow: 0px 0px 38px 0px rgb(0 0 0 / 10%);
   position: relative;
   z-index: 5;
   overflow: hidden;
@@ -10350,8 +10425,8 @@ div#wrapper.open > .offcanvas-mask {
   text-transform: uppercase;
   background-color: #fff;
   color: #fa360a;
-  border: 1px solid #e5e5e5;
-  border-radius: 30px;
+  border: 1px solid #fa2917;
+  border-radius: 10px;
   padding: 15px 63px;
   box-shadow: 0px 17px 68px 0px rgba(89, 89, 89, 0.16);
   transition: all 0.3s ease-in-out;
@@ -10368,7 +10443,7 @@ div#wrapper.open > .offcanvas-mask {
 }
 /*------------------- 5.20 Profit -------------------*/
 .company-profit-wrap1 {
-  padding: 130px 0px 0px 0px;
+  padding: 100px 0px 80px 0px;
 }
 @media only screen and (max-width: 1199px) {
   .company-profit-wrap1 {
@@ -10438,9 +10513,9 @@ div#wrapper.open > .offcanvas-mask {
   color: #444;
   background-color: #fff;
   padding: 14px 28px;
-  border: none;
+  border: 1px solid #fa2917;
+  border-radius: 10px;
   box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 30px;
   transition: all 0.3s ease-in-out;
   position: relative;
   z-index: 5;
@@ -10453,10 +10528,10 @@ div#wrapper.open > .offcanvas-mask {
   position: absolute;
   bottom: 0;
   right: 0;
-  border: none;
+  border: 1px solid #fa2917;
+  border-radius: 10px;
   visibility: hidden;
   opacity: 0;
-  border-radius: 30px;
   z-index: -5;
   transition: all 0.3s ease-in-out;
 }
@@ -11382,7 +11457,7 @@ div#wrapper.open > .offcanvas-mask {
   transition: all 0.3s ease-in-out;
 }
 .team-wrap-layout3 {
-  padding: 120px 0px 145px 0px;
+  padding: 80px 0px 0px 0px;
 }
 @media only screen and (max-width: 1199px) {
   .team-wrap-layout3 {
