@@ -8,29 +8,29 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon Start Here -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/img/fav.png')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{secure_asset('assets/img/fav.png')}}">
     <!-- Bootstrap Css Start Here -->
-    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('assets/css/bootstrap.min.css')}}">
     <!-- Animate Css Start Here -->
-    <link rel="stylesheet" href=" {{asset('assets/css/animate.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('assets/css/animate.css')}}">
     <!-- Owl Carousel Start Here -->
-    <link rel="stylesheet" href="{{asset('assets/vendor/owlcarousel/owl.carousel.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/vendor/owlcarousel/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('assets/vendor/owlcarousel/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('assets/vendor/owlcarousel/owl.theme.default.min.css')}}">
     <!-- Nivo Slider Start Here -->
-    <link rel="stylesheet" href="{{asset('assets/vendor/nivo-slider/nivo-slider.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('assets/vendor/nivo-slider/nivo-slider.css')}}">
     <!-- Sal Css Start Here -->
-    <link rel="stylesheet" href="{{asset('assets/css/sal.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{secure_asset('assets/css/sal.css')}}" type="text/css">
     <!-- Animate Css Start Here -->
-    <link rel="stylesheet" href="{{asset('assets/css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('assets/css/animate.min.css')}}">
     <!-- Slick Css Start Here -->
-    <link rel="stylesheet" href="{{asset('assets/css/slick.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/slick-theme.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('assets/css/slick.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('assets/css/slick-theme.css')}}">
    <!-- Meanmenu Css Start Here -->
-    <link rel="stylesheet" href="{{asset('assets/css/meanmenu.min.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('assets/css/meanmenu.min.css')}}">
     <!-- All min Css Start Here -->
-    <link rel="stylesheet" href="{{asset('assets/css/all.min.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('assets/css/all.min.css')}}">
     <!-- Style Css Start Here -->
-    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('assets/css/style.css')}}">
     <!-- Google Font Start Here -->
     <link rel="preconnect" href="https://fonts.gstatic.com/">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&amp;display=swap" rel="stylesheet">
@@ -132,34 +132,34 @@
     </div>
     <!-- Jquery Js Start Here -->
     
-    <script src=" {{asset('assets/js/jquery-3.4.1.min.js')}}"></script>
+    <script src="{{secure_asset('assets/js/jquery-3.4.1.min.js')}}"></script>
     <!-- Bootstrap Js Start Here -->
-    <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+    <script src="{{secure_asset('assets/js/bootstrap.min.js')}}"></script>
     <!-- Wow Js Start Here -->
-    <script src="{{asset('assets/js/wow.min.js')}}"></script>
+    <script src="{{secure_asset('assets/js/wow.min.js')}}"></script>
     <!-- Owl Carousel Js Start Here -->
-    <script src="{{asset('assets/vendor/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{secure_asset('assets/vendor/owlcarousel/owl.carousel.min.js')}}"></script>
     <!-- Sal Js Start Here -->
-    <script src="{{asset('assets/js/sal.js')}}"></script>
+    <script src="{{secure_asset('assets/js/sal.js')}}"></script>
     <!-- Slick Js Start Here -->
     <script src="{{asset('assets/js/slick.js')}}"></script>
     <script src="{{asset('assets/js/slick.min.js')}}"></script>
     <!-- Nivo Js Start Here -->
-    <script src="{{asset('assets/vendor/nivo-slider/jquery.nivo.slider.js')}}"></script> 
-    <script src=" {{asset('assets/js/home.js')}}"></script>     
+    <script src="{{secure_asset('assets/vendor/nivo-slider/jquery.nivo.slider.js')}}"></script> 
+    <script src=" {{secure_asset('assets/js/home.js')}}"></script>     
     <!-- Meanmenu Js Start Here -->
-    <script src=" {{asset('assets/js/jquery.meanmenu.min.js')}}"></script>
+    <script src=" {{secure_asset('assets/js/jquery.meanmenu.min.js')}}"></script>
     <!-- Google Map js -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtmXSwv4YmAKtcZyyad9W7D4AC08z0Rb4"></script>
     <!-- Circle Js Start Here -->
-    <script src=" {{asset('assets/js/circle-progress.min.js')}}"></script>
+    <script src=" {{secure_asset('assets/js/circle-progress.min.js')}}"></script>
     
     <!-- Axios and SweetAlert Js Start Here -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Main Js Start Here -->
-    <script src=" {{asset('assets/js/main.js')}}"></script>
+    <script src=" {{secure_asset('assets/js/main.js')}}"></script>
 
 
     @yield('scripts')
