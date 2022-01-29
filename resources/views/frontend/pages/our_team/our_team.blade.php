@@ -51,7 +51,7 @@
                             
                         @endisset
                         <ul class="team-social">
-                            <li><a href="{{isset($member->fb_link))}}"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="{{isset($member->fb_link)}}"><i class="fab fa-facebook-square"></i></a></li>
                             <li><a href="{{isset($member->twitter_link)}}"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="{{isset($member->linkedin_link)}}"><i class="fab fa-linkedin-in"></i></a></li>
                             <li><a href="{{isset($member->insta_link)}}"><i class="fab fa-instagram"></i></a></li>
