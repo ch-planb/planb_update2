@@ -160,6 +160,7 @@ Route::prefix('aboutUs')->group(function(){
     Route::post('/store', [AboutUsController::class, 'store'])->name('aboutUs.store');
     Route::get('/list', [AboutUsController::class, 'view'])->name('aboutUs.list');
     Route::get('/delete/{id}', [AboutUsController::class, 'delete'])->name('aboutUs.delete');
+    Route::get('/getData', [AboutUsController::class, 'getData'])->name('aboutUs.getData');
 });
 
 //------aboutus ends --------------//

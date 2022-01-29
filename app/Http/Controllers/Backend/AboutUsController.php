@@ -18,6 +18,7 @@ class AboutUsController extends Controller
        public function store(Request $request)
        {
           
+          
            $validatedata = $request->validate([
                  'title'=>'required',
                  'description'=>'required',
@@ -38,6 +39,7 @@ class AboutUsController extends Controller
                    'title'=> $request->title,
                    'description'=> $request->description,
                    'about_img'=> $save_url,
+                   'core_values'=>serialize($request->core_values),
                  ]);
         $about->save();
 
@@ -67,6 +69,20 @@ class AboutUsController extends Controller
                'alert-type' => 'warning'
                 );
            return redirect()->back()->with($notification);
+       }
+       
+       public function getData(){
+        $array=[];
+        $all_data=AboutUs::get('core_values');
+        $new_array=$all_data->toArray();
+        for ($i=0; $i<count($new_array); $i++) { 
+            $arr=$new_array[$i]['core_values'];
+            array_push($array,$arr); 
+        }
+       foreach ($array as $values){
+        $data=unserialize($values);
+        dump($data);
+       }   
        }
 
 
