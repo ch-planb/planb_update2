@@ -46,18 +46,21 @@
                 <div class="team-box1 team-box3">
                     <div class="item-shape"></div>
                     <div class="item-img">
+                        @isset($member->profile_picture)
                         <a href="#"><img src="{{asset('upload/our_team/' .$member->profile_picture)}}" alt="team" width="510" height="500"></a>
+                            
+                        @endisset
                         <ul class="team-social">
-                            <li><a href="{{$member->fb_link}}"><i class="fab fa-facebook-square"></i></a></li>
-                            <li><a href="{{$member->twitter_link}}"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="{{$member->linkedin_link}}"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="{{$member->insta_link}}"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="{{$member->skype_link}}"><i class="fab fa-skype"></i></a></li>
+                            <li><a href="{{isset($member->fb_link))}}"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="{{isset($member->twitter_link)}}"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="{{isset($member->linkedin_link)}}"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="{{isset($member->insta_link)}}"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="{{isset($member->skype_link)}}"><i class="fab fa-skype"></i></a></li>
                         </ul>
                     </div>
                     <div class="item-content">
-                        <h3 class="item-title"><a href="single-team.html">{{$member->name}}</a></h3>
-                        <h4 class="item-subtitle">{{$member->designation}}</h4>
+                        <h3 class="item-title"><a href="single-team.html">{{isset($member->name)}}</a></h3>
+                        <h4 class="item-subtitle">{{isset($member->designation)}}</h4>
                     </div>
                 </div>
             </div>
@@ -84,14 +87,14 @@
                                 <div class="item-icon"><i class="far fa-comments"></i></div>   
                                 <div class="banner-content">
                                     <div class="item-hotline">Hotline</div>
-                                    <div class="item-number">{{$companyInfo->mobile}}</div>
+                                    <div class="item-number">{{isset($companyInfo->mobile)}}</div>
                                 </div>
                             </div>
                             <div class="item-icon-box item-icon-box2">
                                 <div class="item-icon"><i class="far fa-envelope"></i></div>   
                                 <div class="banner-content">
                                     <div class="item-hotline">Send Us Email</div>
-                                    <div class="item-number">{{$companyInfo->email}}</div>
+                                    <div class="item-number">{{isset($companyInfo->email)}}</div>
                                 </div>
                             </div>
                         </div>
