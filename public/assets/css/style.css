@@ -12670,7 +12670,6 @@ div#wrapper.open > .offcanvas-mask {
 }
 .consulation-box1 {
   padding: 45px 60px 25px 60px;
-  background-image: url(img/service/consulation1.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -12795,8 +12794,8 @@ div#wrapper.open > .offcanvas-mask {
   color: #fff;
   background: #fa360a;
   padding: 13px 34px;
-  border: none;
-  border-radius: 30px;
+  border: 1px solid #fa2917;
+  border-radius: 10px;
   transition: all 0.3s ease-in-out;
   position: relative;
   z-index: 1;

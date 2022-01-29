@@ -15,7 +15,7 @@
             <div class="row align-items-center">
                 <div class="col-xl-2 col-lg-2">
                     <div class="logo-area2">
-                        <a href="index.html" class="temp-logo">
+                        <a href="{{url('/')}}" class="temp-logo">
                             <img src="{{asset('upload/logo/' .$companyInfo->logo)}}" alt="logo" class="img-fluid" width="180" height="45">
                         </a>
                     </div>

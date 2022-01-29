@@ -75,52 +75,110 @@
     </div>
 </section>
 
+
 <!--=====================================-->
-<!--=            Contact Start          =-->
+<!--=          Why-Choose Start         =-->
 <!--=====================================-->
-<section class="contact-wrap2">
+<section class="why-choose-us-wrap1">
     <div class="container">
-        <div class="row gutters-40">
+        <div class="row">
             <div class="col-lg-6">
-                <div class="contact-box2">
-                    <div id="googleMap" class="google-map" style="width:100%; height:612px; border-radius:4px;"></div>
+                <div class="choose-us-box1">
+                    <h2 class="section-title">Why Choose Us</h2>
+                    <p>Dorem ipsum dolor sit amet, consectetur adipiscing elitsed do eiusmod tempor incididunt.</p>
+                    <div id="accordion" class="accordion">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="heading-title" data-toggle="collapse" data-target="#collapseOne" 
+                                    aria-expanded="true">How do you answer for consulting?</h4>
+                            </div>
+                            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Behen an unknown printer took a galley of type and scramble itto make a type specimen book. It has survived not only arey five centuriesBehen an unknown printer took a galley of type itto make a type specimen book.</p> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="heading-title collapsed" data-toggle="collapse" data-target="#headingtwo" 
+                                    aria-expanded="true">How do you answer for consulting?</h4>
+                            </div>
+                            <div id="headingtwo" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Behen an unknown printer took a galley of type and scramble itto make a type specimen book. It has survived not only arey five centuriesBehen an unknown printer took a galley of type itto make a type specimen book.</p> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="heading-title collapsed" data-toggle="collapse" data-target="#headingthree" 
+                                    aria-expanded="true">How do you answer for consulting?</h4>
+                            </div>
+                            <div id="headingthree" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Behen an unknown printer took a galley of type and scramble itto make a type specimen book. It has survived not only arey five centuriesBehen an unknown printer took a galley of type itto make a type specimen book.</p> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="heading-title collapsed" data-toggle="collapse" data-target="#headingfour" 
+                                    aria-expanded="true">How do you answer for consulting?</h4>
+                            </div>
+                            <div id="headingfour" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Behen an unknown printer took a galley of type and scramble itto make a type specimen book. It has survived not only arey five centuriesBehen an unknown printer took a galley of type itto make a type specimen book.</p> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="heading-title collapsed" data-toggle="collapse" data-target="#headingfive" 
+                                    aria-expanded="true">How do you answer for consulting?</h4>
+                            </div>
+                            <div id="headingfive" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Behen an unknown printer took a galley of type and scramble itto make a type specimen book. It has survived not only arey five centuriesBehen an unknown printer took a galley of type itto make a type specimen book.</p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="contact-box3">
-                    <div class="contact-bg-image">
-                        <img src="{{asset('assets/img/figure/figure94.png')}}" alt="figure" width="266" height="214">
-                    </div>
-                    <div class="item-heading">
-                        <h2 class="item-title">We Love To Hear From You</h2>
-                        <p>Please call or email contact form and we will be happy to assist you.</p>
-                    </div>
+                <div class="consulation-box1" style="background-image: url({{asset('assets/img/service/consulation1.png')}});">
+                    <h2 class="section-title">We Love To Hear From You</h2>
+                    <p>Please call or email contact form and we will be happy to assist you.</p>
                     <form class="message-box" id="contactForm2">
-                        <div class="row gutters-10">
-                            <div class="col-lg-12 form-group">
-                                <input type="text" class="form-control" name="name" id="name" placeholder="Your Full Name" value="{{ old('name') }}" autocomplete="off">
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <input type="text" class="form-control" name="name" id="name" value="{{ old('name') }}" autocomplete="off">
+                                <label>Name</label>
                                 <div class="help-block with-errors text-danger" id="name_error"></div>
                             </div>
-                            <div class="col-lg-6 form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Email" value="{{ old('email') }}" autocomplete="off">
+                            <div class="form-group col-lg-12">
+                                <input type="email" class="form-control" name="email" id="email" value="{{ old('email') }}" autocomplete="off">
+                                <label>Email</label>
                                 <div class="help-block with-errors text-danger" id="email_error"></div>
                             </div>
-                            <div class="col-lg-6 form-group">
-                                <input type="text" class="form-control" name="phone" id="phone" placeholder="Contact Number" value="{{ old('phone') }}" autocomplete="off">
+                            <div class="form-group col-lg-12">
+                                <input type="text" class="form-control" name="phone" id="phone" value="{{ old('phone') }}" autocomplete="off">
+                                <label>Number</label>
                                 <div class="help-block with-errors text-danger" id="phone_error"></div>
                             </div>
-                            <div class="col-lg-12 form-group">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" value="{{ old('subject') }}" autocomplete="off">
+                            <div class="form-group col-lg-12">
+                                <input type="text" class="form-control" name="subject" id="subject" value="{{ old('subject') }}" autocomplete="off">
+                                <label>Subject</label>
                                 <div class="help-block with-errors text-danger" id="subject_error"></div>
                             </div>
-                            <div class="col-lg-12 form-group">
-                                <textarea name="message" id="message" class="form-control" placeholder="Message" cols="30" rows="6"></textarea>
+                            <div class="form-group col-lg-12">
+                                <textarea name="message" id="message" class="form-control" cols="30" rows="6"></textarea>
+                                <label>Message</label>
                             </div>
-                            <div class="col-lg-12 form-group">
+                            <div class="form-group col-lg-12">
                                 <button type="submit" class="item-btn">Send message</button>
                             </div>
                         </div>
-                        <div class="form-response"></div>
                     </form>
                 </div>
             </div>
