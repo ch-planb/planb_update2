@@ -48,7 +48,7 @@
     <!--=====================================-->
     <!--=   Preloader     Start             =-->
     <!--=====================================-->
-    <div id="preloader"></div>
+    
     <div class="wrapper" id="wrapper">
         <!--=====================================-->
         <!--=            Header Start           =-->
@@ -142,8 +142,8 @@
     <!-- Sal Js Start Here -->
     <script src="{{secure_asset('assets/js/sal.js')}}"></script>
     <!-- Slick Js Start Here -->
-    <script src="{{asset('assets/js/slick.js')}}"></script>
-    <script src="{{asset('assets/js/slick.min.js')}}"></script>
+    <script src="{{secure_asset('assets/js/slick.js')}}"></script>
+    <script src="{{secure_asset('assets/js/slick.min.js')}}"></script>
     <!-- Nivo Js Start Here -->
     <script src="{{secure_asset('assets/vendor/nivo-slider/jquery.nivo.slider.js')}}"></script> 
     <script src=" {{secure_asset('assets/js/home.js')}}"></script>     
