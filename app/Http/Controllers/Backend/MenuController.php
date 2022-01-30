@@ -36,11 +36,11 @@ class MenuController extends Controller
     }
 
     public function submitMenu(MenuFormRequest $request){
-        $submitMenu = Menu::create([
-            'name' => $request->name,
-            'url' => $request->url,
-            'slug' => $request->slug,
-        ]);
+            $submitMenu =new Menu;
+            $submitMenu->name=  $request->name;
+            $submitMenu->url=  $request->url;
+            $submitMenu->slug=  $request->slug;
+            $submitMenu->save();
         return back()->with("success", "congo!the menu has been added");
     }
 
