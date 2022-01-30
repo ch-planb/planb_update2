@@ -25,7 +25,6 @@ class MenuFormRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'url' => 'required',
             'slug' => 'required',
         ];
     }
@@ -34,7 +33,6 @@ class MenuFormRequest extends FormRequest
 {
     return [
         'name.required' => 'We need the name',
-        'url.required' => 'We need url also',
         'slug.required'  => 'slugs are a good practice',
     ];
 }
